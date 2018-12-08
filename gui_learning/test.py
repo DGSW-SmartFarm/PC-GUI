@@ -15,11 +15,10 @@ MainWindow.showFullScreen()
 
 MainWindow.slot1 = slot1
 
+
+
 ui = Ui_MainWindow()
 ui.setupUi(MainWindow)
-
-
-
 
 
 app.exec_()
