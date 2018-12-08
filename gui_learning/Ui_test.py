@@ -42,124 +42,6 @@ class Ui_MainWindow(object):
 "")
         self.set.setText("")
         self.set.setObjectName("set")
-        self.horizontalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(0, 100, 1921, 321))
-        self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
-        self.chk_layout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
-        self.chk_layout.setSizeConstraint(QtWidgets.QLayout.SetNoConstraint)
-        self.chk_layout.setContentsMargins(50, 5, 50, 0)
-        self.chk_layout.setSpacing(40)
-        self.chk_layout.setObjectName("chk_layout")
-        self.chk_temp = QtWidgets.QPushButton(self.horizontalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.chk_temp.sizePolicy().hasHeightForWidth())
-        self.chk_temp.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(36)
-        self.chk_temp.setFont(font)
-        self.chk_temp.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.chk_temp.setStyleSheet("QPushButton{image:url(./image/chk_temp.png); border:0px;color : rgb(255,113,113);}\n"
-"QPushButton:hover{image:url(./image/chk_temp2.png); border:0px;color : rgb(255,113,113);}\n"
-"\n"
-"\n"
-"\n"
-"\n"
-"")
-        self.chk_temp.setObjectName("chk_temp")
-        self.chk_layout.addWidget(self.chk_temp)
-        self.chk_hum = QtWidgets.QPushButton(self.horizontalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.chk_hum.sizePolicy().hasHeightForWidth())
-        self.chk_hum.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(36)
-        self.chk_hum.setFont(font)
-        self.chk_hum.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.chk_hum.setStyleSheet("QPushButton{image:url(./image/chk_hum.png); border:0px;color:rgb(0,185,250);}\n"
-"QPushButton:hover{image:url(./image/chk_hum2.png); border:0px;color:rgb(0,185,250);}\n"
-"\n"
-"\n"
-"")
-        self.chk_hum.setObjectName("chk_hum")
-        self.chk_layout.addWidget(self.chk_hum)
-        self.chk_co2 = QtWidgets.QPushButton(self.horizontalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.chk_co2.sizePolicy().hasHeightForWidth())
-        self.chk_co2.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(36)
-        self.chk_co2.setFont(font)
-        self.chk_co2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.chk_co2.setStyleSheet("QPushButton{image:url(./image/chk_co2.png); border:0px;color:rgb(146,208,80);}\n"
-"QPushButton:hover{image:url(./image/chk_co22.png); border:0px;color:rgb(146,208,80);}\n"
-"\n"
-"\n"
-"")
-        self.chk_co2.setObjectName("chk_co2")
-        self.chk_layout.addWidget(self.chk_co2)
-        self.chk_ph2 = QtWidgets.QPushButton(self.horizontalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.chk_ph2.sizePolicy().hasHeightForWidth())
-        self.chk_ph2.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(36)
-        self.chk_ph2.setFont(font)
-        self.chk_ph2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.chk_ph2.setStyleSheet("QPushButton{image:url(./image/chk_ph.png); border:0px;color:rgb(38,137,242);}\n"
-"QPushButton:hover{image:url(./image/chk_ph2.png); border:0px;color:rgb(38,137,242);}\n"
-"\n"
-"\n"
-"")
-        self.chk_ph2.setObjectName("chk_ph2")
-        self.chk_layout.addWidget(self.chk_ph2)
-        self.chk_tds = QtWidgets.QPushButton(self.horizontalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.chk_tds.sizePolicy().hasHeightForWidth())
-        self.chk_tds.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(36)
-        self.chk_tds.setFont(font)
-        self.chk_tds.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.chk_tds.setStyleSheet("QPushButton{image:url(./image/chk_tds.png); border:0px;color:rgb(147,62,197);}\n"
-"QPushButton:hover{image:url(./image/chk_tds2.png); border:0px;color:rgb(147,62,197);}\n"
-"\n"
-"\n"
-"")
-        self.chk_tds.setObjectName("chk_tds")
-        self.chk_layout.addWidget(self.chk_tds)
-        self.chk_light = QtWidgets.QPushButton(self.horizontalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.chk_light.sizePolicy().hasHeightForWidth())
-        self.chk_light.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(36)
-        self.chk_light.setFont(font)
-        self.chk_light.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.chk_light.setStyleSheet("QPushButton{image:url(./image/chk_light.png); border:0px;color:rgb(222,217,0);}\n"
-"QPushButton:hover{image:url(./image/chk_light2.png); border:0px;color:rgb(222,217,0);}\n"
-"\n"
-"\n"
-"")
-        self.chk_light.setObjectName("chk_light")
-        self.chk_layout.addWidget(self.chk_light)
         self.widget = QtWidgets.QWidget(self.centralwidget)
         self.widget.setGeometry(QtCore.QRect(-1, 479, 511, 601))
         self.widget.setStyleSheet("border:0px")
@@ -304,9 +186,131 @@ class Ui_MainWindow(object):
         self.tab_12.setObjectName("tab_12")
         self.tabWidget.addTab(self.tab_12, "")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(10, 440, 1921, 46))
+        self.label_2.setGeometry(QtCore.QRect(0, 450, 1921, 36))
+        self.label_2.setStyleSheet("border-bottom: 1px solid rgb(217,217,217) ;")
         self.label_2.setText("")
         self.label_2.setObjectName("label_2")
+        self.widget_2 = QtWidgets.QWidget(self.centralwidget)
+        self.widget_2.setGeometry(QtCore.QRect(0, 110, 1920, 321))
+        self.widget_2.setObjectName("widget_2")
+        self.horizontalLayoutWidget = QtWidgets.QWidget(self.widget_2)
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(0, 0, 1921, 321))
+        self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
+        self.chk_layout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
+        self.chk_layout.setSizeConstraint(QtWidgets.QLayout.SetNoConstraint)
+        self.chk_layout.setContentsMargins(50, 5, 50, 0)
+        self.chk_layout.setSpacing(40)
+        self.chk_layout.setObjectName("chk_layout")
+        self.chk_temp = QtWidgets.QPushButton(self.horizontalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.chk_temp.sizePolicy().hasHeightForWidth())
+        self.chk_temp.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(36)
+        self.chk_temp.setFont(font)
+        self.chk_temp.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.chk_temp.setStyleSheet("QPushButton{image:url(./image/chk_temp.png); border:0px;color : rgb(255,113,113);}\n"
+"QPushButton:hover{image:url(./image/chk_temp2.png); border:0px;color : rgb(255,113,113);}\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"")
+        self.chk_temp.setObjectName("chk_temp")
+        self.chk_layout.addWidget(self.chk_temp)
+        self.chk_hum = QtWidgets.QPushButton(self.horizontalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.chk_hum.sizePolicy().hasHeightForWidth())
+        self.chk_hum.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(36)
+        self.chk_hum.setFont(font)
+        self.chk_hum.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.chk_hum.setStyleSheet("QPushButton{image:url(./image/chk_hum.png); border:0px;color:rgb(0,185,250);}\n"
+"QPushButton:hover{image:url(./image/chk_hum2.png); border:0px;color:rgb(0,185,250);}\n"
+"\n"
+"\n"
+"")
+        self.chk_hum.setObjectName("chk_hum")
+        self.chk_layout.addWidget(self.chk_hum)
+        self.chk_co2 = QtWidgets.QPushButton(self.horizontalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.chk_co2.sizePolicy().hasHeightForWidth())
+        self.chk_co2.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(36)
+        self.chk_co2.setFont(font)
+        self.chk_co2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.chk_co2.setStyleSheet("QPushButton{image:url(./image/chk_co2.png); border:0px;color:rgb(146,208,80);}\n"
+"QPushButton:hover{image:url(./image/chk_co22.png); border:0px;color:rgb(146,208,80);}\n"
+"\n"
+"\n"
+"")
+        self.chk_co2.setObjectName("chk_co2")
+        self.chk_layout.addWidget(self.chk_co2)
+        self.chk_ph2 = QtWidgets.QPushButton(self.horizontalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.chk_ph2.sizePolicy().hasHeightForWidth())
+        self.chk_ph2.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(36)
+        self.chk_ph2.setFont(font)
+        self.chk_ph2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.chk_ph2.setStyleSheet("QPushButton{image:url(./image/chk_ph.png); border:0px;color:rgb(38,137,242);}\n"
+"QPushButton:hover{image:url(./image/chk_ph2.png); border:0px;color:rgb(38,137,242);}\n"
+"\n"
+"\n"
+"")
+        self.chk_ph2.setObjectName("chk_ph2")
+        self.chk_layout.addWidget(self.chk_ph2)
+        self.chk_tds = QtWidgets.QPushButton(self.horizontalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.chk_tds.sizePolicy().hasHeightForWidth())
+        self.chk_tds.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(36)
+        self.chk_tds.setFont(font)
+        self.chk_tds.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.chk_tds.setStyleSheet("QPushButton{image:url(./image/chk_tds.png); border:0px;color:rgb(147,62,197);}\n"
+"QPushButton:hover{image:url(./image/chk_tds2.png); border:0px;color:rgb(147,62,197);}\n"
+"\n"
+"\n"
+"")
+        self.chk_tds.setObjectName("chk_tds")
+        self.chk_layout.addWidget(self.chk_tds)
+        self.chk_light = QtWidgets.QPushButton(self.horizontalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.chk_light.sizePolicy().hasHeightForWidth())
+        self.chk_light.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(36)
+        self.chk_light.setFont(font)
+        self.chk_light.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.chk_light.setStyleSheet("QPushButton{image:url(./image/chk_light.png); border:0px;color:rgb(222,217,0);}\n"
+"QPushButton:hover{image:url(./image/chk_light2.png); border:0px;color:rgb(222,217,0);}\n"
+"\n"
+"\n"
+"")
+        self.chk_light.setObjectName("chk_light")
+        self.chk_layout.addWidget(self.chk_light)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -316,6 +320,18 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "온도"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "습도"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MainWindow", "CO2"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), _translate("MainWindow", "PH"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), _translate("MainWindow", "TDS"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_6), _translate("MainWindow", "조도"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), _translate("MainWindow", "그래프 보기"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_8), _translate("MainWindow", "온도 제어"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_9), _translate("MainWindow", "밝기 제어"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_10), _translate("MainWindow", "CO2 제어"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_11), _translate("MainWindow", "송풍기 제어"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_12), _translate("MainWindow", "양액 제어"))
         self.chk_temp.setText(_translate("MainWindow", "\n"
 "\n"
 "\n"
@@ -340,16 +356,4 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "19"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "온도"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MainWindow", "습도"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MainWindow", "CO2"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), _translate("MainWindow", "PH"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), _translate("MainWindow", "TDS"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_6), _translate("MainWindow", "조도"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_7), _translate("MainWindow", "그래프 보기"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_8), _translate("MainWindow", "온도 제어"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_9), _translate("MainWindow", "밝기 제어"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_10), _translate("MainWindow", "CO2 제어"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_11), _translate("MainWindow", "송풍기 제어"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_12), _translate("MainWindow", "양액 제어"))
 
