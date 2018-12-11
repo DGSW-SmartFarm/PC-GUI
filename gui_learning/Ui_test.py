@@ -69,51 +69,6 @@ class Ui_MainWindow(object):
         self.credit_3.setFlat(False)
         self.credit_3.setObjectName("credit_3")
         self.verticalLayout.addWidget(self.credit_3)
-        self.credit_4 = QtWidgets.QPushButton(self.verticalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.credit_4.sizePolicy().hasHeightForWidth())
-        self.credit_4.setSizePolicy(sizePolicy)
-        self.credit_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.credit_4.setStyleSheet("QPushButton{image:url(./image/mon_temp.png); border:0px;}\n"
-"QPushButton:hover{image:url(./image/mon_temp2.png); border:0px;}\n"
-"\n"
-"\n"
-"")
-        self.credit_4.setText("")
-        self.credit_4.setObjectName("credit_4")
-        self.verticalLayout.addWidget(self.credit_4)
-        self.credit_6 = QtWidgets.QPushButton(self.verticalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.credit_6.sizePolicy().hasHeightForWidth())
-        self.credit_6.setSizePolicy(sizePolicy)
-        self.credit_6.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.credit_6.setStyleSheet("QPushButton{image:url(./image/mon_light.png); border:0px;}\n"
-"QPushButton:hover{image:url(./image/mon_light2.png); border:0px;}\n"
-"\n"
-"\n"
-"")
-        self.credit_6.setText("")
-        self.credit_6.setObjectName("credit_6")
-        self.verticalLayout.addWidget(self.credit_6)
-        self.credit_5 = QtWidgets.QPushButton(self.verticalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.credit_5.sizePolicy().hasHeightForWidth())
-        self.credit_5.setSizePolicy(sizePolicy)
-        self.credit_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.credit_5.setStyleSheet("QPushButton{image:url(./image/mon_co2.png); border:0px;}\n"
-"QPushButton:hover{image:url(./image/mon_co22.png); border:0px;}\n"
-"\n"
-"\n"
-"")
-        self.credit_5.setText("")
-        self.credit_5.setObjectName("credit_5")
-        self.verticalLayout.addWidget(self.credit_5)
         self.credit_7 = QtWidgets.QPushButton(self.verticalLayoutWidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
@@ -129,6 +84,51 @@ class Ui_MainWindow(object):
         self.credit_7.setText("")
         self.credit_7.setObjectName("credit_7")
         self.verticalLayout.addWidget(self.credit_7)
+        self.credit_6 = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.credit_6.sizePolicy().hasHeightForWidth())
+        self.credit_6.setSizePolicy(sizePolicy)
+        self.credit_6.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.credit_6.setStyleSheet("QPushButton{image:url(./image/mon_light.png); border:0px;}\n"
+"QPushButton:hover{image:url(./image/mon_light2.png); border:0px;}\n"
+"\n"
+"\n"
+"")
+        self.credit_6.setText("")
+        self.credit_6.setObjectName("credit_6")
+        self.verticalLayout.addWidget(self.credit_6)
+        self.credit_4 = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.credit_4.sizePolicy().hasHeightForWidth())
+        self.credit_4.setSizePolicy(sizePolicy)
+        self.credit_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.credit_4.setStyleSheet("QPushButton{image:url(./image/mon_temp.png); border:0px;}\n"
+"QPushButton:hover{image:url(./image/mon_temp2.png); border:0px;}\n"
+"\n"
+"\n"
+"")
+        self.credit_4.setText("")
+        self.credit_4.setObjectName("credit_4")
+        self.verticalLayout.addWidget(self.credit_4)
+        self.credit_5 = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.credit_5.sizePolicy().hasHeightForWidth())
+        self.credit_5.setSizePolicy(sizePolicy)
+        self.credit_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.credit_5.setStyleSheet("QPushButton{image:url(./image/mon_co2.png); border:0px;}\n"
+"QPushButton:hover{image:url(./image/mon_co22.png); border:0px;}\n"
+"\n"
+"\n"
+"")
+        self.credit_5.setText("")
+        self.credit_5.setObjectName("credit_5")
+        self.verticalLayout.addWidget(self.credit_5)
         self.credit_2 = QtWidgets.QPushButton(self.verticalLayoutWidget)
         self.credit_2.setEnabled(True)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
@@ -187,7 +187,9 @@ class Ui_MainWindow(object):
         self.tabWidget.addTab(self.tab_12, "")
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(0, 450, 1921, 36))
-        self.label_2.setStyleSheet("border-bottom: 1px solid rgb(217,217,217) ;")
+        self.label_2.setStyleSheet("border-bottom: 2px solid rgb(217,217,217) ;")
+        self.label_2.setFrameShadow(QtWidgets.QFrame.Plain)
+        self.label_2.setLineWidth(2)
         self.label_2.setText("")
         self.label_2.setObjectName("label_2")
         self.widget_2 = QtWidgets.QWidget(self.centralwidget)
@@ -239,6 +241,24 @@ class Ui_MainWindow(object):
 "")
         self.chk_hum.setObjectName("chk_hum")
         self.chk_layout.addWidget(self.chk_hum)
+        self.chk_light = QtWidgets.QPushButton(self.horizontalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.chk_light.sizePolicy().hasHeightForWidth())
+        self.chk_light.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(36)
+        self.chk_light.setFont(font)
+        self.chk_light.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.chk_light.setStyleSheet("QPushButton{image:url(./image/chk_light.png); border:0px;color:rgb(222,217,0);}\n"
+"QPushButton:hover{image:url(./image/chk_light2.png); border:0px;color:rgb(222,217,0);}\n"
+"\n"
+"\n"
+"")
+        self.chk_light.setObjectName("chk_light")
+        self.chk_layout.addWidget(self.chk_light)
         self.chk_co2 = QtWidgets.QPushButton(self.horizontalLayoutWidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
@@ -293,24 +313,6 @@ class Ui_MainWindow(object):
 "")
         self.chk_tds.setObjectName("chk_tds")
         self.chk_layout.addWidget(self.chk_tds)
-        self.chk_light = QtWidgets.QPushButton(self.horizontalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.chk_light.sizePolicy().hasHeightForWidth())
-        self.chk_light.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(36)
-        self.chk_light.setFont(font)
-        self.chk_light.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.chk_light.setStyleSheet("QPushButton{image:url(./image/chk_light.png); border:0px;color:rgb(222,217,0);}\n"
-"QPushButton:hover{image:url(./image/chk_light2.png); border:0px;color:rgb(222,217,0);}\n"
-"\n"
-"\n"
-"")
-        self.chk_light.setObjectName("chk_light")
-        self.chk_layout.addWidget(self.chk_light)
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -340,6 +342,10 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "74%"))
+        self.chk_light.setText(_translate("MainWindow", "\n"
+"\n"
+"\n"
+"19"))
         self.chk_co2.setText(_translate("MainWindow", "\n"
 "\n"
 "\n"
@@ -352,8 +358,4 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "45"))
-        self.chk_light.setText(_translate("MainWindow", "\n"
-"\n"
-"\n"
-"19"))
 

@@ -141,7 +141,7 @@ QPushButton:hover{image:url(./image/mon_graph2.png); border:0px;}
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="credit_4">
+       <widget class="QPushButton" name="credit_7">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
           <horstretch>0</horstretch>
@@ -152,8 +152,8 @@ QPushButton:hover{image:url(./image/mon_graph2.png); border:0px;}
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
-         <string notr="true">QPushButton{image:url(./image/mon_temp.png); border:0px;}
-QPushButton:hover{image:url(./image/mon_temp2.png); border:0px;}
+         <string notr="true">QPushButton{image:url(./image/mon_pen.png); border:0px;}
+QPushButton:hover{image:url(./image/mon_pen2.png); border:0px;}
 
 
 </string>
@@ -187,6 +187,29 @@ QPushButton:hover{image:url(./image/mon_light2.png); border:0px;}
        </widget>
       </item>
       <item>
+       <widget class="QPushButton" name="credit_4">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{image:url(./image/mon_temp.png); border:0px;}
+QPushButton:hover{image:url(./image/mon_temp2.png); border:0px;}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="credit_5">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
@@ -200,29 +223,6 @@ QPushButton:hover{image:url(./image/mon_light2.png); border:0px;}
         <property name="styleSheet">
          <string notr="true">QPushButton{image:url(./image/mon_co2.png); border:0px;}
 QPushButton:hover{image:url(./image/mon_co22.png); border:0px;}
-
-
-</string>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="credit_7">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton{image:url(./image/mon_pen.png); border:0px;}
-QPushButton:hover{image:url(./image/mon_pen2.png); border:0px;}
 
 
 </string>
@@ -347,7 +347,13 @@ QPushButton:hover{image:url(./image/mon_nutri2.png); border:0px;}
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border-bottom: 1px solid rgb(217,217,217) ;</string>
+     <string notr="true">border-bottom: 2px solid rgb(217,217,217) ;</string>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
     </property>
     <property name="text">
      <string/>
@@ -457,6 +463,38 @@ QPushButton:hover{image:url(./image/chk_hum2.png); border:0px;color:rgb(0,185,25
        </widget>
       </item>
       <item>
+       <widget class="QPushButton" name="chk_light">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>서울남산체 EB</family>
+          <pointsize>36</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{image:url(./image/chk_light.png); border:0px;color:rgb(222,217,0);}
+QPushButton:hover{image:url(./image/chk_light2.png); border:0px;color:rgb(222,217,0);}
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>
+
+
+19</string>
+        </property>
+       </widget>
+      </item>
+      <item>
        <widget class="QPushButton" name="chk_co2">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
@@ -549,38 +587,6 @@ QPushButton:hover{image:url(./image/chk_tds2.png); border:0px;color:rgb(147,62,1
 
 
 45</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="chk_light">
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="font">
-         <font>
-          <family>서울남산체 EB</family>
-          <pointsize>36</pointsize>
-         </font>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">QPushButton{image:url(./image/chk_light.png); border:0px;color:rgb(222,217,0);}
-QPushButton:hover{image:url(./image/chk_light2.png); border:0px;color:rgb(222,217,0);}
-
-
-</string>
-        </property>
-        <property name="text">
-         <string>
-
-
-19</string>
         </property>
        </widget>
       </item>
