@@ -2644,7 +2644,7 @@ image : NULL;
            <number>30</number>
           </property>
          </widget>
-         <widget class="QPushButton" name="bal_btn_1">
+         <widget class="QPushButton" name="bal_btn">
           <property name="geometry">
            <rect>
             <x>10</x>
@@ -2856,7 +2856,7 @@ QPushButton:hover{image:url(./image/close_2.png); border:0px;}
          <zorder>bal_r_1</zorder>
          <zorder>bal_b_1</zorder>
          <zorder>bal_w_1</zorder>
-         <zorder>bal_btn_1</zorder>
+         <zorder>bal_btn</zorder>
          <zorder>bal_text_1</zorder>
          <zorder>bal_label_1</zorder>
          <zorder>bal_onoff_1</zorder>
