@@ -1208,11 +1208,11 @@ class Ui_MainWindow(object):
         self.gridLayoutWidget = QtWidgets.QWidget(self.balgi)
         self.gridLayoutWidget.setGeometry(QtCore.QRect(79, 9, 1251, 461))
         self.gridLayoutWidget.setObjectName("gridLayoutWidget")
-        self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
-        self.gridLayout.setContentsMargins(25, 12, 25, 12)
-        self.gridLayout.setHorizontalSpacing(45)
-        self.gridLayout.setVerticalSpacing(10)
-        self.gridLayout.setObjectName("gridLayout")
+        self.bal_layout = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.bal_layout.setContentsMargins(25, 12, 25, 12)
+        self.bal_layout.setHorizontalSpacing(45)
+        self.bal_layout.setVerticalSpacing(10)
+        self.bal_layout.setObjectName("bal_layout")
         self.bal_wi_1 = QtWidgets.QWidget(self.gridLayoutWidget)
         self.bal_wi_1.setEnabled(True)
         self.bal_wi_1.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
@@ -1241,7 +1241,7 @@ class Ui_MainWindow(object):
         self.bal_text_1.setMaxLength(30)
         self.bal_text_1.setObjectName("bal_text_1")
         self.bal_btn_1 = QtWidgets.QPushButton(self.bal_wi_1)
-        self.bal_btn_1.setGeometry(QtCore.QRect(10, 0, 251, 211))
+        self.bal_btn_1.setGeometry(QtCore.QRect(0, 0, 261, 211))
         self.bal_btn_1.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.bal_btn_1.setStyleSheet("image : url(./);\n"
 "background-color : rgba(0,0,0,0);")
@@ -1338,7 +1338,7 @@ class Ui_MainWindow(object):
         self.bal_onoff_1.raise_()
         self.bal_su_1.raise_()
         self.bal_clo_1.raise_()
-        self.gridLayout.addWidget(self.bal_wi_1, 0, 0, 1, 1)
+        self.bal_layout.addWidget(self.bal_wi_1, 0, 0, 1, 1)
         self.bal_wi_2 = QtWidgets.QWidget(self.gridLayoutWidget)
         self.bal_wi_2.setEnabled(True)
         self.bal_wi_2.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
@@ -1367,7 +1367,7 @@ class Ui_MainWindow(object):
         self.bal_text_2.setMaxLength(30)
         self.bal_text_2.setObjectName("bal_text_2")
         self.bal_btn_2 = QtWidgets.QPushButton(self.bal_wi_2)
-        self.bal_btn_2.setGeometry(QtCore.QRect(10, 0, 251, 211))
+        self.bal_btn_2.setGeometry(QtCore.QRect(0, 0, 261, 211))
         self.bal_btn_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.bal_btn_2.setStyleSheet("image : url(./);\n"
 "background-color : rgba(0,0,0,0);")
@@ -1464,7 +1464,7 @@ class Ui_MainWindow(object):
         self.bal_onoff_2.raise_()
         self.bal_su_2.raise_()
         self.bal_clo_2.raise_()
-        self.gridLayout.addWidget(self.bal_wi_2, 0, 1, 1, 1)
+        self.bal_layout.addWidget(self.bal_wi_2, 0, 1, 1, 1)
         self.bal_wi_3 = QtWidgets.QWidget(self.gridLayoutWidget)
         self.bal_wi_3.setEnabled(True)
         self.bal_wi_3.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
@@ -1493,7 +1493,7 @@ class Ui_MainWindow(object):
         self.bal_text_3.setMaxLength(30)
         self.bal_text_3.setObjectName("bal_text_3")
         self.bal_btn_3 = QtWidgets.QPushButton(self.bal_wi_3)
-        self.bal_btn_3.setGeometry(QtCore.QRect(10, 0, 251, 211))
+        self.bal_btn_3.setGeometry(QtCore.QRect(0, 0, 261, 211))
         self.bal_btn_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.bal_btn_3.setStyleSheet("image : url(./);\n"
 "background-color : rgba(0,0,0,0);")
@@ -1590,7 +1590,7 @@ class Ui_MainWindow(object):
         self.bal_onoff_3.raise_()
         self.bal_su_3.raise_()
         self.bal_clo_3.raise_()
-        self.gridLayout.addWidget(self.bal_wi_3, 0, 2, 1, 1)
+        self.bal_layout.addWidget(self.bal_wi_3, 0, 2, 1, 1)
         self.bal_wi_4 = QtWidgets.QWidget(self.gridLayoutWidget)
         self.bal_wi_4.setEnabled(True)
         self.bal_wi_4.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
@@ -1619,7 +1619,7 @@ class Ui_MainWindow(object):
         self.bal_text_4.setMaxLength(30)
         self.bal_text_4.setObjectName("bal_text_4")
         self.bal_btn_4 = QtWidgets.QPushButton(self.bal_wi_4)
-        self.bal_btn_4.setGeometry(QtCore.QRect(10, 0, 251, 211))
+        self.bal_btn_4.setGeometry(QtCore.QRect(0, 0, 261, 211))
         self.bal_btn_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.bal_btn_4.setStyleSheet("image : url(./);\n"
 "background-color : rgba(0,0,0,0);")
@@ -1716,7 +1716,7 @@ class Ui_MainWindow(object):
         self.bal_onoff_4.raise_()
         self.bal_su_4.raise_()
         self.bal_clo_4.raise_()
-        self.gridLayout.addWidget(self.bal_wi_4, 0, 3, 1, 1)
+        self.bal_layout.addWidget(self.bal_wi_4, 0, 3, 1, 1)
         self.bal_wi_5 = QtWidgets.QWidget(self.gridLayoutWidget)
         self.bal_wi_5.setEnabled(True)
         self.bal_wi_5.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
@@ -1745,7 +1745,7 @@ class Ui_MainWindow(object):
         self.bal_text_5.setMaxLength(30)
         self.bal_text_5.setObjectName("bal_text_5")
         self.bal_btn_5 = QtWidgets.QPushButton(self.bal_wi_5)
-        self.bal_btn_5.setGeometry(QtCore.QRect(10, 0, 251, 211))
+        self.bal_btn_5.setGeometry(QtCore.QRect(0, 0, 261, 211))
         self.bal_btn_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.bal_btn_5.setStyleSheet("image : url(./);\n"
 "background-color : rgba(0,0,0,0);")
@@ -1842,7 +1842,7 @@ class Ui_MainWindow(object):
         self.bal_onoff_5.raise_()
         self.bal_su_5.raise_()
         self.bal_clo_5.raise_()
-        self.gridLayout.addWidget(self.bal_wi_5, 1, 0, 1, 1)
+        self.bal_layout.addWidget(self.bal_wi_5, 1, 0, 1, 1)
         self.bal_wi_6 = QtWidgets.QWidget(self.gridLayoutWidget)
         self.bal_wi_6.setEnabled(True)
         self.bal_wi_6.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
@@ -1871,7 +1871,7 @@ class Ui_MainWindow(object):
         self.bal_text_6.setMaxLength(30)
         self.bal_text_6.setObjectName("bal_text_6")
         self.bal_btn_6 = QtWidgets.QPushButton(self.bal_wi_6)
-        self.bal_btn_6.setGeometry(QtCore.QRect(10, 0, 251, 211))
+        self.bal_btn_6.setGeometry(QtCore.QRect(0, 0, 261, 211))
         self.bal_btn_6.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.bal_btn_6.setStyleSheet("image : url(./);\n"
 "background-color : rgba(0,0,0,0);")
@@ -1968,7 +1968,7 @@ class Ui_MainWindow(object):
         self.bal_onoff_6.raise_()
         self.bal_su_6.raise_()
         self.bal_clo_6.raise_()
-        self.gridLayout.addWidget(self.bal_wi_6, 1, 1, 1, 1)
+        self.bal_layout.addWidget(self.bal_wi_6, 1, 1, 1, 1)
         self.bal_wi_7 = QtWidgets.QWidget(self.gridLayoutWidget)
         self.bal_wi_7.setEnabled(True)
         self.bal_wi_7.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
@@ -1997,7 +1997,7 @@ class Ui_MainWindow(object):
         self.bal_text_7.setMaxLength(30)
         self.bal_text_7.setObjectName("bal_text_7")
         self.bal_btn_7 = QtWidgets.QPushButton(self.bal_wi_7)
-        self.bal_btn_7.setGeometry(QtCore.QRect(10, 0, 251, 211))
+        self.bal_btn_7.setGeometry(QtCore.QRect(0, 0, 261, 211))
         self.bal_btn_7.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.bal_btn_7.setStyleSheet("image : url(./);\n"
 "background-color : rgba(0,0,0,0);")
@@ -2094,7 +2094,7 @@ class Ui_MainWindow(object):
         self.bal_onoff_7.raise_()
         self.bal_su_7.raise_()
         self.bal_clo_7.raise_()
-        self.gridLayout.addWidget(self.bal_wi_7, 1, 2, 1, 1)
+        self.bal_layout.addWidget(self.bal_wi_7, 1, 2, 1, 1)
         self.bal_wi_8 = QtWidgets.QWidget(self.gridLayoutWidget)
         self.bal_wi_8.setEnabled(True)
         self.bal_wi_8.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
@@ -2123,7 +2123,7 @@ class Ui_MainWindow(object):
         self.bal_text_8.setMaxLength(30)
         self.bal_text_8.setObjectName("bal_text_8")
         self.bal_btn_8 = QtWidgets.QPushButton(self.bal_wi_8)
-        self.bal_btn_8.setGeometry(QtCore.QRect(10, 0, 251, 211))
+        self.bal_btn_8.setGeometry(QtCore.QRect(0, 0, 261, 211))
         self.bal_btn_8.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.bal_btn_8.setStyleSheet("image : url(./);\n"
 "background-color : rgba(0,0,0,0);")
@@ -2220,7 +2220,7 @@ class Ui_MainWindow(object):
         self.bal_onoff_8.raise_()
         self.bal_su_8.raise_()
         self.bal_clo_8.raise_()
-        self.gridLayout.addWidget(self.bal_wi_8, 1, 3, 1, 1)
+        self.bal_layout.addWidget(self.bal_wi_8, 1, 3, 1, 1)
         self.horizontalLayoutWidget_2 = QtWidgets.QWidget(self.balgi)
         self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(0, 480, 1411, 121))
         self.horizontalLayoutWidget_2.setObjectName("horizontalLayoutWidget_2")
@@ -2231,9 +2231,9 @@ class Ui_MainWindow(object):
         self.widget_15 = QtWidgets.QWidget(self.horizontalLayoutWidget_2)
         self.widget_15.setStyleSheet("border-top : 2px solid rgb(217,217,217) ;")
         self.widget_15.setObjectName("widget_15")
-        self.horizontalSlider_4 = QtWidgets.QSlider(self.widget_15)
-        self.horizontalSlider_4.setGeometry(QtCore.QRect(25, 55, 371, 51))
-        self.horizontalSlider_4.setStyleSheet("\n"
+        self.bal_r_val = QtWidgets.QSlider(self.widget_15)
+        self.bal_r_val.setGeometry(QtCore.QRect(25, 55, 371, 51))
+        self.bal_r_val.setStyleSheet("\n"
 "QSlider::groove:horizontal {\n"
 "    height:4px;\n"
 "    background: rgb(217,217,217);\n"
@@ -2263,30 +2263,30 @@ class Ui_MainWindow(object):
 "    border : 0px;\n"
 "\n"
 "}")
-        self.horizontalSlider_4.setMaximum(100)
-        self.horizontalSlider_4.setOrientation(QtCore.Qt.Horizontal)
-        self.horizontalSlider_4.setObjectName("horizontalSlider_4")
-        self.label_9 = QtWidgets.QLabel(self.widget_15)
-        self.label_9.setGeometry(QtCore.QRect(405, 60, 61, 41))
+        self.bal_r_val.setMaximum(255)
+        self.bal_r_val.setOrientation(QtCore.Qt.Horizontal)
+        self.bal_r_val.setObjectName("bal_r_val")
+        self.bal_r_num = QtWidgets.QLabel(self.widget_15)
+        self.bal_r_num.setGeometry(QtCore.QRect(405, 60, 61, 41))
         font = QtGui.QFont()
         font.setFamily("서울남산체 M")
         font.setPointSize(22)
-        self.label_9.setFont(font)
-        self.label_9.setStyleSheet("border : 0px;")
-        self.label_9.setTextFormat(QtCore.Qt.AutoText)
-        self.label_9.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_9.setObjectName("label_9")
-        self.pushButton_5 = QtWidgets.QPushButton(self.widget_15)
-        self.pushButton_5.setGeometry(QtCore.QRect(395, 12, 71, 31))
-        self.pushButton_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_5.setStyleSheet("QPushButton{image:url(./image/button_gray.png); border:0px;}\n"
+        self.bal_r_num.setFont(font)
+        self.bal_r_num.setStyleSheet("border : 0px;")
+        self.bal_r_num.setTextFormat(QtCore.Qt.AutoText)
+        self.bal_r_num.setAlignment(QtCore.Qt.AlignCenter)
+        self.bal_r_num.setObjectName("bal_r_num")
+        self.bal_r_btn = QtWidgets.QPushButton(self.widget_15)
+        self.bal_r_btn.setGeometry(QtCore.QRect(395, 12, 71, 31))
+        self.bal_r_btn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_r_btn.setStyleSheet("QPushButton{image:url(./image/button_gray.png); border:0px;}\n"
 "QPushButton:checked{image:url(./image/button_red.png); border:0px;}\n"
 "\n"
 "")
-        self.pushButton_5.setText("")
-        self.pushButton_5.setCheckable(True)
-        self.pushButton_5.setChecked(False)
-        self.pushButton_5.setObjectName("pushButton_5")
+        self.bal_r_btn.setText("")
+        self.bal_r_btn.setCheckable(True)
+        self.bal_r_btn.setChecked(False)
+        self.bal_r_btn.setObjectName("bal_r_btn")
         self.label_10 = QtWidgets.QLabel(self.widget_15)
         self.label_10.setGeometry(QtCore.QRect(330, 8, 61, 41))
         font = QtGui.QFont()
@@ -2300,9 +2300,9 @@ class Ui_MainWindow(object):
         self.widget_14 = QtWidgets.QWidget(self.horizontalLayoutWidget_2)
         self.widget_14.setStyleSheet("border-top : 2px solid rgb(217,217,217) ;")
         self.widget_14.setObjectName("widget_14")
-        self.horizontalSlider_3 = QtWidgets.QSlider(self.widget_14)
-        self.horizontalSlider_3.setGeometry(QtCore.QRect(25, 55, 371, 51))
-        self.horizontalSlider_3.setStyleSheet("\n"
+        self.bal_b_val = QtWidgets.QSlider(self.widget_14)
+        self.bal_b_val.setGeometry(QtCore.QRect(25, 55, 371, 51))
+        self.bal_b_val.setStyleSheet("\n"
 "QSlider::groove:horizontal {\n"
 "    height:4px;\n"
 "    background: rgb(217,217,217);\n"
@@ -2332,29 +2332,29 @@ class Ui_MainWindow(object):
 "    border : 0px;\n"
 "\n"
 "}")
-        self.horizontalSlider_3.setMaximum(100)
-        self.horizontalSlider_3.setOrientation(QtCore.Qt.Horizontal)
-        self.horizontalSlider_3.setObjectName("horizontalSlider_3")
-        self.label_7 = QtWidgets.QLabel(self.widget_14)
-        self.label_7.setGeometry(QtCore.QRect(405, 60, 61, 41))
+        self.bal_b_val.setMaximum(255)
+        self.bal_b_val.setOrientation(QtCore.Qt.Horizontal)
+        self.bal_b_val.setObjectName("bal_b_val")
+        self.bal_b_num = QtWidgets.QLabel(self.widget_14)
+        self.bal_b_num.setGeometry(QtCore.QRect(405, 60, 61, 41))
         font = QtGui.QFont()
         font.setFamily("서울남산체 M")
         font.setPointSize(22)
-        self.label_7.setFont(font)
-        self.label_7.setStyleSheet("border : 0px;")
-        self.label_7.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_7.setObjectName("label_7")
-        self.pushButton_4 = QtWidgets.QPushButton(self.widget_14)
-        self.pushButton_4.setGeometry(QtCore.QRect(395, 12, 71, 31))
-        self.pushButton_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_4.setStyleSheet("QPushButton{image:url(./image/button_gray.png); border:0px;}\n"
+        self.bal_b_num.setFont(font)
+        self.bal_b_num.setStyleSheet("border : 0px;")
+        self.bal_b_num.setAlignment(QtCore.Qt.AlignCenter)
+        self.bal_b_num.setObjectName("bal_b_num")
+        self.bal_b_btn = QtWidgets.QPushButton(self.widget_14)
+        self.bal_b_btn.setGeometry(QtCore.QRect(395, 12, 71, 31))
+        self.bal_b_btn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_b_btn.setStyleSheet("QPushButton{image:url(./image/button_gray.png); border:0px;}\n"
 "QPushButton:checked{image:url(./image/button_blue.png); border:0px;}\n"
 "\n"
 "")
-        self.pushButton_4.setText("")
-        self.pushButton_4.setCheckable(True)
-        self.pushButton_4.setChecked(False)
-        self.pushButton_4.setObjectName("pushButton_4")
+        self.bal_b_btn.setText("")
+        self.bal_b_btn.setCheckable(True)
+        self.bal_b_btn.setChecked(False)
+        self.bal_b_btn.setObjectName("bal_b_btn")
         self.label_8 = QtWidgets.QLabel(self.widget_14)
         self.label_8.setGeometry(QtCore.QRect(330, 8, 61, 41))
         font = QtGui.QFont()
@@ -2368,9 +2368,9 @@ class Ui_MainWindow(object):
         self.widget_13 = QtWidgets.QWidget(self.horizontalLayoutWidget_2)
         self.widget_13.setStyleSheet("border-top : 2px solid rgb(217,217,217) ;")
         self.widget_13.setObjectName("widget_13")
-        self.horizontalSlider = QtWidgets.QSlider(self.widget_13)
-        self.horizontalSlider.setGeometry(QtCore.QRect(25, 55, 371, 51))
-        self.horizontalSlider.setStyleSheet("\n"
+        self.bal_w_val = QtWidgets.QSlider(self.widget_13)
+        self.bal_w_val.setGeometry(QtCore.QRect(25, 55, 371, 51))
+        self.bal_w_val.setStyleSheet("\n"
 "QSlider::groove:horizontal {\n"
 "    height:4px;\n"
 "    background: rgb(217,217,217);\n"
@@ -2400,29 +2400,29 @@ class Ui_MainWindow(object):
 "    border : 0px;\n"
 "\n"
 "}")
-        self.horizontalSlider.setMaximum(100)
-        self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
-        self.horizontalSlider.setObjectName("horizontalSlider")
-        self.label_3 = QtWidgets.QLabel(self.widget_13)
-        self.label_3.setGeometry(QtCore.QRect(405, 60, 61, 41))
+        self.bal_w_val.setMaximum(255)
+        self.bal_w_val.setOrientation(QtCore.Qt.Horizontal)
+        self.bal_w_val.setObjectName("bal_w_val")
+        self.bal_w_num = QtWidgets.QLabel(self.widget_13)
+        self.bal_w_num.setGeometry(QtCore.QRect(405, 60, 61, 41))
         font = QtGui.QFont()
         font.setFamily("서울남산체 M")
         font.setPointSize(22)
-        self.label_3.setFont(font)
-        self.label_3.setStyleSheet("border : 0px;")
-        self.label_3.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_3.setObjectName("label_3")
-        self.pushButton = QtWidgets.QPushButton(self.widget_13)
-        self.pushButton.setGeometry(QtCore.QRect(395, 12, 71, 31))
-        self.pushButton.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton.setStyleSheet("QPushButton{image:url(./image/button_gray.png); border:0px;}\n"
+        self.bal_w_num.setFont(font)
+        self.bal_w_num.setStyleSheet("border : 0px;")
+        self.bal_w_num.setAlignment(QtCore.Qt.AlignCenter)
+        self.bal_w_num.setObjectName("bal_w_num")
+        self.bal_w_btn = QtWidgets.QPushButton(self.widget_13)
+        self.bal_w_btn.setGeometry(QtCore.QRect(395, 12, 71, 31))
+        self.bal_w_btn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_w_btn.setStyleSheet("QPushButton{image:url(./image/button_gray.png); border:0px;}\n"
 "QPushButton:checked{image:url(./image/button_black.png); border:0px;}\n"
 "\n"
 "")
-        self.pushButton.setText("")
-        self.pushButton.setCheckable(True)
-        self.pushButton.setChecked(False)
-        self.pushButton.setObjectName("pushButton")
+        self.bal_w_btn.setText("")
+        self.bal_w_btn.setCheckable(True)
+        self.bal_w_btn.setChecked(False)
+        self.bal_w_btn.setObjectName("bal_w_btn")
         self.label_4 = QtWidgets.QLabel(self.widget_13)
         self.label_4.setGeometry(QtCore.QRect(280, 8, 111, 41))
         font = QtGui.QFont()
@@ -2434,7 +2434,7 @@ class Ui_MainWindow(object):
         self.label_4.setObjectName("label_4")
         self.horizontalLayout.addWidget(self.widget_13)
         self.pushButton_14 = QtWidgets.QPushButton(self.balgi)
-        self.pushButton_14.setGeometry(QtCore.QRect(20, 210, 31, 61))
+        self.pushButton_14.setGeometry(QtCore.QRect(30, 210, 31, 61))
         self.pushButton_14.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_14.setStyleSheet("QPushButton{image:url(./image/left_1.png); border:0px;color:}\n"
 "QPushButton:hover{image:url(./image/left_2.png); border:0px;}\n"
@@ -2443,7 +2443,7 @@ class Ui_MainWindow(object):
         self.pushButton_14.setCheckable(False)
         self.pushButton_14.setObjectName("pushButton_14")
         self.pushButton_15 = QtWidgets.QPushButton(self.balgi)
-        self.pushButton_15.setGeometry(QtCore.QRect(1360, 210, 31, 61))
+        self.pushButton_15.setGeometry(QtCore.QRect(1350, 210, 31, 61))
         self.pushButton_15.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.pushButton_15.setStyleSheet("QPushButton{image:url(./image/right_1.png); border:0px;color:}\n"
 "QPushButton:hover{image:url(./image/right_2.png); border:0px;}\n"
@@ -3743,10 +3743,10 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
         self.stackedWidget.setCurrentIndex(2)
-        self.horizontalSlider.valueChanged['int'].connect(self.label_3.setNum)
-        self.horizontalSlider_4.sliderMoved['int'].connect(self.label_9.setNum)
-        self.horizontalSlider_4.valueChanged['int'].connect(self.label_9.setNum)
-        self.horizontalSlider_3.valueChanged['int'].connect(self.label_7.setNum)
+        self.bal_r_val.sliderMoved['int'].connect(self.bal_r_num.setNum)
+        self.bal_r_val.valueChanged['int'].connect(self.bal_r_num.setNum)
+        self.bal_b_val.valueChanged['int'].connect(self.bal_b_num.setNum)
+        self.bal_w_val.valueChanged['int'].connect(self.bal_w_num.setNum)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -3842,11 +3842,11 @@ class Ui_MainWindow(object):
         self.bal_r_8.setText(_translate("MainWindow", "100"))
         self.bal_b_8.setText(_translate("MainWindow", "100"))
         self.bal_w_8.setText(_translate("MainWindow", "100"))
-        self.label_9.setText(_translate("MainWindow", "0"))
+        self.bal_r_num.setText(_translate("MainWindow", "0"))
         self.label_10.setText(_translate("MainWindow", "RED"))
-        self.label_7.setText(_translate("MainWindow", "0"))
+        self.bal_b_num.setText(_translate("MainWindow", "0"))
         self.label_8.setText(_translate("MainWindow", "BLUE"))
-        self.label_3.setText(_translate("MainWindow", "0"))
+        self.bal_w_num.setText(_translate("MainWindow", "0"))
         self.label_4.setText(_translate("MainWindow", "WHITE"))
         self.lineEdit_61.setText(_translate("MainWindow", "왼쪽 위 led"))
         self.lineEdit_62.setText(_translate("MainWindow", "L02"))

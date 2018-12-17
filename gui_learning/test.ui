@@ -2576,7 +2576,7 @@ QPushButton:hover{image:url(./image/left_2.png); border:0px;}
         <height>461</height>
        </rect>
       </property>
-      <layout class="QGridLayout" name="gridLayout" rowstretch="0,0" columnstretch="0,0,0,0">
+      <layout class="QGridLayout" name="bal_layout" rowstretch="0,0" columnstretch="0,0,0,0">
        <property name="leftMargin">
         <number>25</number>
        </property>
@@ -2647,9 +2647,9 @@ image : NULL;
          <widget class="QPushButton" name="bal_btn_1">
           <property name="geometry">
            <rect>
-            <x>10</x>
+            <x>0</x>
             <y>0</y>
-            <width>251</width>
+            <width>261</width>
             <height>211</height>
            </rect>
           </property>
@@ -2916,9 +2916,9 @@ image : NULL;
          <widget class="QPushButton" name="bal_btn_2">
           <property name="geometry">
            <rect>
-            <x>10</x>
+            <x>0</x>
             <y>0</y>
-            <width>251</width>
+            <width>261</width>
             <height>211</height>
            </rect>
           </property>
@@ -3185,9 +3185,9 @@ image : NULL;
          <widget class="QPushButton" name="bal_btn_3">
           <property name="geometry">
            <rect>
-            <x>10</x>
+            <x>0</x>
             <y>0</y>
-            <width>251</width>
+            <width>261</width>
             <height>211</height>
            </rect>
           </property>
@@ -3454,9 +3454,9 @@ image : NULL;
          <widget class="QPushButton" name="bal_btn_4">
           <property name="geometry">
            <rect>
-            <x>10</x>
+            <x>0</x>
             <y>0</y>
-            <width>251</width>
+            <width>261</width>
             <height>211</height>
            </rect>
           </property>
@@ -3723,9 +3723,9 @@ image : NULL;
          <widget class="QPushButton" name="bal_btn_5">
           <property name="geometry">
            <rect>
-            <x>10</x>
+            <x>0</x>
             <y>0</y>
-            <width>251</width>
+            <width>261</width>
             <height>211</height>
            </rect>
           </property>
@@ -3992,9 +3992,9 @@ image : NULL;
          <widget class="QPushButton" name="bal_btn_6">
           <property name="geometry">
            <rect>
-            <x>10</x>
+            <x>0</x>
             <y>0</y>
-            <width>251</width>
+            <width>261</width>
             <height>211</height>
            </rect>
           </property>
@@ -4261,9 +4261,9 @@ image : NULL;
          <widget class="QPushButton" name="bal_btn_7">
           <property name="geometry">
            <rect>
-            <x>10</x>
+            <x>0</x>
             <y>0</y>
-            <width>251</width>
+            <width>261</width>
             <height>211</height>
            </rect>
           </property>
@@ -4530,9 +4530,9 @@ image : NULL;
          <widget class="QPushButton" name="bal_btn_8">
           <property name="geometry">
            <rect>
-            <x>10</x>
+            <x>0</x>
             <y>0</y>
-            <width>251</width>
+            <width>261</width>
             <height>211</height>
            </rect>
           </property>
@@ -4773,7 +4773,7 @@ QPushButton:hover{image:url(./image/close_2.png); border:0px;}
          <property name="styleSheet">
           <string notr="true">border-top : 2px solid rgb(217,217,217) ;</string>
          </property>
-         <widget class="QSlider" name="horizontalSlider_4">
+         <widget class="QSlider" name="bal_r_val">
           <property name="geometry">
            <rect>
             <x>25</x>
@@ -4815,13 +4815,13 @@ QSlider{
 }</string>
           </property>
           <property name="maximum">
-           <number>100</number>
+           <number>255</number>
           </property>
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
          </widget>
-         <widget class="QLabel" name="label_9">
+         <widget class="QLabel" name="bal_r_num">
           <property name="geometry">
            <rect>
             <x>405</x>
@@ -4849,7 +4849,7 @@ QSlider{
            <set>Qt::AlignCenter</set>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton_5">
+         <widget class="QPushButton" name="bal_r_btn">
           <property name="geometry">
            <rect>
             <x>395</x>
@@ -4909,7 +4909,7 @@ QPushButton:checked{image:url(./image/button_red.png); border:0px;}
          <property name="styleSheet">
           <string notr="true">border-top : 2px solid rgb(217,217,217) ;</string>
          </property>
-         <widget class="QSlider" name="horizontalSlider_3">
+         <widget class="QSlider" name="bal_b_val">
           <property name="geometry">
            <rect>
             <x>25</x>
@@ -4951,13 +4951,13 @@ QSlider{
 }</string>
           </property>
           <property name="maximum">
-           <number>100</number>
+           <number>255</number>
           </property>
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
          </widget>
-         <widget class="QLabel" name="label_7">
+         <widget class="QLabel" name="bal_b_num">
           <property name="geometry">
            <rect>
             <x>405</x>
@@ -4982,7 +4982,7 @@ QSlider{
            <set>Qt::AlignCenter</set>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton_4">
+         <widget class="QPushButton" name="bal_b_btn">
           <property name="geometry">
            <rect>
             <x>395</x>
@@ -5042,7 +5042,7 @@ QPushButton:checked{image:url(./image/button_blue.png); border:0px;}
          <property name="styleSheet">
           <string notr="true">border-top : 2px solid rgb(217,217,217) ;</string>
          </property>
-         <widget class="QSlider" name="horizontalSlider">
+         <widget class="QSlider" name="bal_w_val">
           <property name="geometry">
            <rect>
             <x>25</x>
@@ -5084,13 +5084,13 @@ QSlider{
 }</string>
           </property>
           <property name="maximum">
-           <number>100</number>
+           <number>255</number>
           </property>
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
          </widget>
-         <widget class="QLabel" name="label_3">
+         <widget class="QLabel" name="bal_w_num">
           <property name="geometry">
            <rect>
             <x>405</x>
@@ -5115,7 +5115,7 @@ QSlider{
            <set>Qt::AlignCenter</set>
           </property>
          </widget>
-         <widget class="QPushButton" name="pushButton">
+         <widget class="QPushButton" name="bal_w_btn">
           <property name="geometry">
            <rect>
             <x>395</x>
@@ -5175,7 +5175,7 @@ QPushButton:checked{image:url(./image/button_black.png); border:0px;}
      <widget class="QPushButton" name="pushButton_14">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>30</x>
         <y>210</y>
         <width>31</width>
         <height>61</height>
@@ -5199,7 +5199,7 @@ QPushButton:hover{image:url(./image/left_2.png); border:0px;}
      <widget class="QPushButton" name="pushButton_15">
       <property name="geometry">
        <rect>
-        <x>1360</x>
+        <x>1350</x>
         <y>210</y>
         <width>31</width>
         <height>61</height>
@@ -8043,25 +8043,9 @@ background-color: rgba(255, 255, 255, 0);
  <resources/>
  <connections>
   <connection>
-   <sender>horizontalSlider</sender>
-   <signal>valueChanged(int)</signal>
-   <receiver>label_3</receiver>
-   <slot>setNum(int)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>1723</x>
-     <y>1046</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1890</x>
-     <y>1064</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>horizontalSlider_4</sender>
+   <sender>bal_r_val</sender>
    <signal>sliderMoved(int)</signal>
-   <receiver>label_9</receiver>
+   <receiver>bal_r_num</receiver>
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -8075,9 +8059,9 @@ background-color: rgba(255, 255, 255, 0);
    </hints>
   </connection>
   <connection>
-   <sender>horizontalSlider_4</sender>
+   <sender>bal_r_val</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>label_9</receiver>
+   <receiver>bal_r_num</receiver>
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -8091,9 +8075,9 @@ background-color: rgba(255, 255, 255, 0);
    </hints>
   </connection>
   <connection>
-   <sender>horizontalSlider_3</sender>
+   <sender>bal_b_val</sender>
    <signal>valueChanged(int)</signal>
-   <receiver>label_7</receiver>
+   <receiver>bal_b_num</receiver>
    <slot>setNum(int)</slot>
    <hints>
     <hint type="sourcelabel">
@@ -8106,7 +8090,26 @@ background-color: rgba(255, 255, 255, 0);
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>bal_w_val</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>bal_w_num</receiver>
+   <slot>setNum(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1723</x>
+     <y>1046</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1890</x>
+     <y>1064</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
+ <slots>
+  <slot>slot1()</slot>
+ </slots>
  <buttongroups>
   <buttongroup name="buttonGroup"/>
  </buttongroups>
