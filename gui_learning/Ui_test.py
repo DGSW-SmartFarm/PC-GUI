@@ -27,23 +27,27 @@ class Ui_MainWindow(object):
         self.credit.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.credit.setStyleSheet("QPushButton{image:url(./image/credit.png); border:0px;}\n"
 "QPushButton:hover{image:url(./image/credit2.png); border:0px;}\n"
-"\n"
-"\n"
+"QPushButton:checked{image:url(./image/credit2.png); border:0px;}\n"
 "")
         self.credit.setText("")
         self.credit.setCheckable(True)
         self.credit.setObjectName("credit")
+        self.buttonGroup = QtWidgets.QButtonGroup(MainWindow)
+        self.buttonGroup.setObjectName("buttonGroup")
+        self.buttonGroup.addButton(self.credit)
         self.set = QtWidgets.QPushButton(self.centralwidget)
         self.set.setGeometry(QtCore.QRect(1850, 20, 40, 40))
         self.set.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.set.setStyleSheet("QPushButton{image:url(./image/set.png); border:0px;}\n"
 "QPushButton:hover{image:url(./image/set2.png); border:0px;}\n"
+"QPushButton:checked{image:url(./image/set2.png); border:0px;}\n"
 "\n"
 "\n"
 "")
         self.set.setText("")
         self.set.setCheckable(True)
         self.set.setObjectName("set")
+        self.buttonGroup.addButton(self.set)
         self.widget = QtWidgets.QWidget(self.centralwidget)
         self.widget.setGeometry(QtCore.QRect(-1, 479, 511, 601))
         self.widget.setStyleSheet("border:0px")
@@ -55,112 +59,110 @@ class Ui_MainWindow(object):
         self.verticalLayout.setContentsMargins(0, 7, 1, 0)
         self.verticalLayout.setSpacing(0)
         self.verticalLayout.setObjectName("verticalLayout")
-        self.credit_3 = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.see_grap = QtWidgets.QPushButton(self.verticalLayoutWidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.credit_3.sizePolicy().hasHeightForWidth())
-        self.credit_3.setSizePolicy(sizePolicy)
-        self.credit_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.credit_3.setStyleSheet("QPushButton{image:url(./image/mon_graph.png); border:0px;}\n"
+        sizePolicy.setHeightForWidth(self.see_grap.sizePolicy().hasHeightForWidth())
+        self.see_grap.setSizePolicy(sizePolicy)
+        self.see_grap.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.see_grap.setStyleSheet("QPushButton{image:url(./image/mon_graph.png); border:0px;}\n"
 "QPushButton:hover{image:url(./image/mon_graph2.png); border:0px;}\n"
 "QPushButton:checked{image:url(./image/mon_graph2.png); border:0px;}\n"
 "")
-        self.credit_3.setText("")
-        self.credit_3.setCheckable(True)
-        self.credit_3.setChecked(True)
-        self.credit_3.setFlat(False)
-        self.credit_3.setObjectName("credit_3")
-        self.buttonGroup = QtWidgets.QButtonGroup(MainWindow)
-        self.buttonGroup.setObjectName("buttonGroup")
-        self.buttonGroup.addButton(self.credit_3)
-        self.verticalLayout.addWidget(self.credit_3)
-        self.credit_7 = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.see_grap.setText("")
+        self.see_grap.setCheckable(True)
+        self.see_grap.setChecked(True)
+        self.see_grap.setFlat(False)
+        self.see_grap.setObjectName("see_grap")
+        self.buttonGroup.addButton(self.see_grap)
+        self.verticalLayout.addWidget(self.see_grap)
+        self.see_pen = QtWidgets.QPushButton(self.verticalLayoutWidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.credit_7.sizePolicy().hasHeightForWidth())
-        self.credit_7.setSizePolicy(sizePolicy)
-        self.credit_7.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.credit_7.setStyleSheet("QPushButton{image:url(./image/mon_pen.png); border:0px;}\n"
+        sizePolicy.setHeightForWidth(self.see_pen.sizePolicy().hasHeightForWidth())
+        self.see_pen.setSizePolicy(sizePolicy)
+        self.see_pen.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.see_pen.setStyleSheet("QPushButton{image:url(./image/mon_pen.png); border:0px;}\n"
 "QPushButton:hover{image:url(./image/mon_pen2.png); border:0px;}\n"
 "QPushButton:checked{image:url(./image/mon_pen2.png); border:0px;}\n"
 "\n"
 "")
-        self.credit_7.setText("")
-        self.credit_7.setCheckable(True)
-        self.credit_7.setObjectName("credit_7")
-        self.buttonGroup.addButton(self.credit_7)
-        self.verticalLayout.addWidget(self.credit_7)
-        self.credit_6 = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.see_pen.setText("")
+        self.see_pen.setCheckable(True)
+        self.see_pen.setObjectName("see_pen")
+        self.buttonGroup.addButton(self.see_pen)
+        self.verticalLayout.addWidget(self.see_pen)
+        self.see_bal = QtWidgets.QPushButton(self.verticalLayoutWidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.credit_6.sizePolicy().hasHeightForWidth())
-        self.credit_6.setSizePolicy(sizePolicy)
-        self.credit_6.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.credit_6.setStyleSheet("QPushButton{image:url(./image/mon_light.png); border:0px;}\n"
+        sizePolicy.setHeightForWidth(self.see_bal.sizePolicy().hasHeightForWidth())
+        self.see_bal.setSizePolicy(sizePolicy)
+        self.see_bal.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.see_bal.setStyleSheet("QPushButton{image:url(./image/mon_light.png); border:0px;}\n"
 "QPushButton:hover{image:url(./image/mon_light2.png); border:0px;}\n"
 "\n"
 "\n"
 "QPushButton:checked{image:url(./image/mon_light2.png); border:0px;}")
-        self.credit_6.setText("")
-        self.credit_6.setCheckable(True)
-        self.credit_6.setObjectName("credit_6")
-        self.buttonGroup.addButton(self.credit_6)
-        self.verticalLayout.addWidget(self.credit_6)
-        self.credit_4 = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.see_bal.setText("")
+        self.see_bal.setCheckable(True)
+        self.see_bal.setObjectName("see_bal")
+        self.buttonGroup.addButton(self.see_bal)
+        self.verticalLayout.addWidget(self.see_bal)
+        self.see_temp = QtWidgets.QPushButton(self.verticalLayoutWidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.credit_4.sizePolicy().hasHeightForWidth())
-        self.credit_4.setSizePolicy(sizePolicy)
-        self.credit_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.credit_4.setStyleSheet("QPushButton{image:url(./image/mon_temp.png); border:0px;}\n"
+        sizePolicy.setHeightForWidth(self.see_temp.sizePolicy().hasHeightForWidth())
+        self.see_temp.setSizePolicy(sizePolicy)
+        self.see_temp.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.see_temp.setStyleSheet("QPushButton{image:url(./image/mon_temp.png); border:0px;}\n"
 "QPushButton:hover{image:url(./image/mon_temp2.png); border:0px;}\n"
 "QPushButton:checked{image:url(./image/mon_temp2.png); border:0px;}\n"
 "\n"
 "")
-        self.credit_4.setText("")
-        self.credit_4.setCheckable(True)
-        self.credit_4.setObjectName("credit_4")
-        self.buttonGroup.addButton(self.credit_4)
-        self.verticalLayout.addWidget(self.credit_4)
-        self.credit_5 = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.see_temp.setText("")
+        self.see_temp.setCheckable(True)
+        self.see_temp.setObjectName("see_temp")
+        self.buttonGroup.addButton(self.see_temp)
+        self.verticalLayout.addWidget(self.see_temp)
+        self.see_co2 = QtWidgets.QPushButton(self.verticalLayoutWidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.credit_5.sizePolicy().hasHeightForWidth())
-        self.credit_5.setSizePolicy(sizePolicy)
-        self.credit_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.credit_5.setStyleSheet("QPushButton{image:url(./image/mon_co2.png); border:0px;}\n"
+        sizePolicy.setHeightForWidth(self.see_co2.sizePolicy().hasHeightForWidth())
+        self.see_co2.setSizePolicy(sizePolicy)
+        self.see_co2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.see_co2.setStyleSheet("QPushButton{image:url(./image/mon_co2.png); border:0px;}\n"
 "QPushButton:hover{image:url(./image/mon_co22.png); border:0px;}\n"
 "QPushButton:checked{image:url(./image/mon_co22.png); border:0px;}\n"
 "\n"
 "")
-        self.credit_5.setText("")
-        self.credit_5.setCheckable(True)
-        self.credit_5.setObjectName("credit_5")
-        self.buttonGroup.addButton(self.credit_5)
-        self.verticalLayout.addWidget(self.credit_5)
-        self.credit_2 = QtWidgets.QPushButton(self.verticalLayoutWidget)
-        self.credit_2.setEnabled(True)
+        self.see_co2.setText("")
+        self.see_co2.setCheckable(True)
+        self.see_co2.setObjectName("see_co2")
+        self.buttonGroup.addButton(self.see_co2)
+        self.verticalLayout.addWidget(self.see_co2)
+        self.see_yang = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        self.see_yang.setEnabled(True)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.credit_2.sizePolicy().hasHeightForWidth())
-        self.credit_2.setSizePolicy(sizePolicy)
-        self.credit_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.credit_2.setStyleSheet("QPushButton{image:url(./image/mon_nutri.png); border:0px;}\n"
+        sizePolicy.setHeightForWidth(self.see_yang.sizePolicy().hasHeightForWidth())
+        self.see_yang.setSizePolicy(sizePolicy)
+        self.see_yang.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.see_yang.setStyleSheet("QPushButton{image:url(./image/mon_nutri.png); border:0px;}\n"
 "QPushButton:hover{image:url(./image/mon_nutri2.png); border:0px;}\n"
 "QPushButton:checked{image:url(./image/mon_nutri2.png); border:0px;}\n"
 "\n"
 "")
-        self.credit_2.setText("")
-        self.credit_2.setCheckable(True)
-        self.credit_2.setObjectName("credit_2")
-        self.buttonGroup.addButton(self.credit_2)
-        self.verticalLayout.addWidget(self.credit_2)
+        self.see_yang.setText("")
+        self.see_yang.setCheckable(True)
+        self.see_yang.setObjectName("see_yang")
+        self.buttonGroup.addButton(self.see_yang)
+        self.verticalLayout.addWidget(self.see_yang)
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(0, 450, 1921, 36))
         self.label_2.setStyleSheet("border-bottom: 2px solid rgb(217,217,217) ;")
@@ -241,6 +243,26 @@ class Ui_MainWindow(object):
         self.chk_co2.setObjectName("chk_co2")
         self.buttonGroup.addButton(self.chk_co2)
         self.chk_layout.addWidget(self.chk_co2)
+        self.chk_light = QtWidgets.QPushButton(self.horizontalLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.chk_light.sizePolicy().hasHeightForWidth())
+        self.chk_light.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(36)
+        self.chk_light.setFont(font)
+        self.chk_light.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.chk_light.setStyleSheet("QPushButton{image:url(./image/chk_light.png); border:0px;color:rgb(222,217,0);}\n"
+"QPushButton:hover{image:url(./image/chk_light2.png); border:0px;color:rgb(222,217,0);}\n"
+"QPushButton:checked{image:url(./image/chk_light2.png); border:0px;color:rgb(222,217,0);}\n"
+"\n"
+"")
+        self.chk_light.setCheckable(True)
+        self.chk_light.setObjectName("chk_light")
+        self.buttonGroup.addButton(self.chk_light)
+        self.chk_layout.addWidget(self.chk_light)
         self.chk_ph2 = QtWidgets.QPushButton(self.horizontalLayoutWidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
@@ -281,32 +303,15 @@ class Ui_MainWindow(object):
         self.chk_tds.setObjectName("chk_tds")
         self.buttonGroup.addButton(self.chk_tds)
         self.chk_layout.addWidget(self.chk_tds)
-        self.chk_light = QtWidgets.QPushButton(self.horizontalLayoutWidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.chk_light.sizePolicy().hasHeightForWidth())
-        self.chk_light.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(36)
-        self.chk_light.setFont(font)
-        self.chk_light.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.chk_light.setStyleSheet("QPushButton{image:url(./image/chk_light.png); border:0px;color:rgb(222,217,0);}\n"
-"QPushButton:hover{image:url(./image/chk_light2.png); border:0px;color:rgb(222,217,0);}\n"
-"QPushButton:checked{image:url(./image/chk_light2.png); border:0px;color:rgb(222,217,0);}\n"
-"\n"
-"")
-        self.chk_light.setCheckable(True)
-        self.chk_light.setObjectName("chk_light")
-        self.buttonGroup.addButton(self.chk_light)
-        self.chk_layout.addWidget(self.chk_light)
         self.stackedWidget = QtWidgets.QStackedWidget(self.centralwidget)
         self.stackedWidget.setGeometry(QtCore.QRect(507, 485, 1411, 595))
         self.stackedWidget.setStyleSheet("border-left : 2px solid rgb(217,217,217);")
         self.stackedWidget.setObjectName("stackedWidget")
         self.grape = QtWidgets.QWidget()
         self.grape.setObjectName("grape")
+        self.graphicsView = PlotWidget(self.grape)
+        self.graphicsView.setGeometry(QtCore.QRect(155, 171, 481, 291))
+        self.graphicsView.setObjectName("graphicsView")
         self.stackedWidget.addWidget(self.grape)
         self.song = QtWidgets.QWidget()
         self.song.setObjectName("song")
@@ -1339,510 +1344,6 @@ class Ui_MainWindow(object):
         self.bal_su_1.raise_()
         self.bal_clo_1.raise_()
         self.bal_layout.addWidget(self.bal_wi_1, 0, 0, 1, 1)
-        self.bal_wi_2 = QtWidgets.QWidget(self.gridLayoutWidget)
-        self.bal_wi_2.setEnabled(True)
-        self.bal_wi_2.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
-"QWidget:hover{image:url(./image/kit_light2.png); border:0px; background-color : rgba(0,0,0,0);}\n"
-"\n"
-"\n"
-"")
-        self.bal_wi_2.setObjectName("bal_wi_2")
-        self.bal_text_2 = QtWidgets.QLineEdit(self.bal_wi_2)
-        self.bal_text_2.setEnabled(False)
-        self.bal_text_2.setGeometry(QtCore.QRect(15, 12, 241, 31))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(20)
-        self.bal_text_2.setFont(font)
-        self.bal_text_2.setStyleSheet("QLineEdit:Enabled{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}\n"
-"QLineEdit{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}")
-        self.bal_text_2.setMaxLength(30)
-        self.bal_text_2.setObjectName("bal_text_2")
-        self.bal_btn_2 = QtWidgets.QPushButton(self.bal_wi_2)
-        self.bal_btn_2.setGeometry(QtCore.QRect(0, 0, 261, 211))
-        self.bal_btn_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_btn_2.setStyleSheet("image : url(./);\n"
-"background-color : rgba(0,0,0,0);")
-        self.bal_btn_2.setText("")
-        self.bal_btn_2.setObjectName("bal_btn_2")
-        self.bal_label_2 = QtWidgets.QLineEdit(self.bal_wi_2)
-        self.bal_label_2.setEnabled(False)
-        self.bal_label_2.setGeometry(QtCore.QRect(15, 45, 141, 31))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(14)
-        self.bal_label_2.setFont(font)
-        self.bal_label_2.setStyleSheet("QLineEdit:Enabled{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}\n"
-"QLineEdit{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}")
-        self.bal_label_2.setMaxLength(30)
-        self.bal_label_2.setObjectName("bal_label_2")
-        self.bal_onoff_2 = QtWidgets.QPushButton(self.bal_wi_2)
-        self.bal_onoff_2.setGeometry(QtCore.QRect(160, 40, 91, 81))
-        self.bal_onoff_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_onoff_2.setStyleSheet("QPushButton{image:url(./image/off_1.png); border:0px; background-color : rgba(0,0,0,0);}\n"
-"QPushButton:hover{image:url(./image/off_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
-"QPushButton:checked{image:url(./image/on_1.png); border:0px;background-color : rgba(0,0,0,0);}\n"
-"QPushButton:checked:hover{image:url(./image/on_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
-"")
-        self.bal_onoff_2.setText("")
-        self.bal_onoff_2.setCheckable(True)
-        self.bal_onoff_2.setChecked(False)
-        self.bal_onoff_2.setObjectName("bal_onoff_2")
-        self.bal_r_2 = QtWidgets.QLabel(self.bal_wi_2)
-        self.bal_r_2.setGeometry(QtCore.QRect(55, 88, 56, 30))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 B")
-        font.setPointSize(20)
-        self.bal_r_2.setFont(font)
-        self.bal_r_2.setStyleSheet("background-color : rgba(0,0,0,0);\n"
-"image : url(./);\n"
-"")
-        self.bal_r_2.setObjectName("bal_r_2")
-        self.bal_b_2 = QtWidgets.QLabel(self.bal_wi_2)
-        self.bal_b_2.setGeometry(QtCore.QRect(55, 129, 56, 30))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 B")
-        font.setPointSize(20)
-        self.bal_b_2.setFont(font)
-        self.bal_b_2.setStyleSheet("background-color : rgba(0,0,0,0);\n"
-"image : url(./);\n"
-"")
-        self.bal_b_2.setObjectName("bal_b_2")
-        self.bal_w_2 = QtWidgets.QLabel(self.bal_wi_2)
-        self.bal_w_2.setGeometry(QtCore.QRect(55, 170, 56, 30))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 B")
-        font.setPointSize(20)
-        self.bal_w_2.setFont(font)
-        self.bal_w_2.setStyleSheet("background-color : rgba(0,0,0,0);\n"
-"image : url(./);\n"
-"")
-        self.bal_w_2.setObjectName("bal_w_2")
-        self.bal_su_2 = QtWidgets.QPushButton(self.bal_wi_2)
-        self.bal_su_2.setGeometry(QtCore.QRect(185, 170, 31, 31))
-        self.bal_su_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_su_2.setStyleSheet("QPushButton{image:url(./image/su_1.png); border:0px;color:}\n"
-"QPushButton:hover{image:url(./image/su_2.png); border:0px;}\n"
-"QPushButton:checked{image:url(./image/ck_1.png); border:0px;}\n"
-"QPushButton:checked:hover{image:url(./image/ck_2.png); border:0px;}\n"
-"\n"
-"")
-        self.bal_su_2.setText("")
-        self.bal_su_2.setCheckable(True)
-        self.bal_su_2.setObjectName("bal_su_2")
-        self.bal_clo_2 = QtWidgets.QPushButton(self.bal_wi_2)
-        self.bal_clo_2.setGeometry(QtCore.QRect(220, 170, 31, 31))
-        self.bal_clo_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_clo_2.setStyleSheet("QPushButton{image:url(./image/close_1.png); border:0px;color:}\n"
-"QPushButton:hover{image:url(./image/close_2.png); border:0px;}\n"
-"")
-        self.bal_clo_2.setText("")
-        self.bal_clo_2.setCheckable(False)
-        self.bal_clo_2.setObjectName("bal_clo_2")
-        self.bal_w_2.raise_()
-        self.bal_b_2.raise_()
-        self.bal_r_2.raise_()
-        self.bal_btn_2.raise_()
-        self.bal_text_2.raise_()
-        self.bal_label_2.raise_()
-        self.bal_onoff_2.raise_()
-        self.bal_su_2.raise_()
-        self.bal_clo_2.raise_()
-        self.bal_layout.addWidget(self.bal_wi_2, 0, 1, 1, 1)
-        self.bal_wi_3 = QtWidgets.QWidget(self.gridLayoutWidget)
-        self.bal_wi_3.setEnabled(True)
-        self.bal_wi_3.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
-"QWidget:hover{image:url(./image/kit_light2.png); border:0px; background-color : rgba(0,0,0,0);}\n"
-"\n"
-"\n"
-"")
-        self.bal_wi_3.setObjectName("bal_wi_3")
-        self.bal_text_3 = QtWidgets.QLineEdit(self.bal_wi_3)
-        self.bal_text_3.setEnabled(False)
-        self.bal_text_3.setGeometry(QtCore.QRect(15, 12, 241, 31))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(20)
-        self.bal_text_3.setFont(font)
-        self.bal_text_3.setStyleSheet("QLineEdit:Enabled{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}\n"
-"QLineEdit{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}")
-        self.bal_text_3.setMaxLength(30)
-        self.bal_text_3.setObjectName("bal_text_3")
-        self.bal_btn_3 = QtWidgets.QPushButton(self.bal_wi_3)
-        self.bal_btn_3.setGeometry(QtCore.QRect(0, 0, 261, 211))
-        self.bal_btn_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_btn_3.setStyleSheet("image : url(./);\n"
-"background-color : rgba(0,0,0,0);")
-        self.bal_btn_3.setText("")
-        self.bal_btn_3.setObjectName("bal_btn_3")
-        self.bal_label_3 = QtWidgets.QLineEdit(self.bal_wi_3)
-        self.bal_label_3.setEnabled(False)
-        self.bal_label_3.setGeometry(QtCore.QRect(15, 45, 141, 31))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(14)
-        self.bal_label_3.setFont(font)
-        self.bal_label_3.setStyleSheet("QLineEdit:Enabled{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}\n"
-"QLineEdit{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}")
-        self.bal_label_3.setMaxLength(30)
-        self.bal_label_3.setObjectName("bal_label_3")
-        self.bal_onoff_3 = QtWidgets.QPushButton(self.bal_wi_3)
-        self.bal_onoff_3.setGeometry(QtCore.QRect(160, 40, 91, 81))
-        self.bal_onoff_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_onoff_3.setStyleSheet("QPushButton{image:url(./image/off_1.png); border:0px; background-color : rgba(0,0,0,0);}\n"
-"QPushButton:hover{image:url(./image/off_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
-"QPushButton:checked{image:url(./image/on_1.png); border:0px;background-color : rgba(0,0,0,0);}\n"
-"QPushButton:checked:hover{image:url(./image/on_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
-"")
-        self.bal_onoff_3.setText("")
-        self.bal_onoff_3.setCheckable(True)
-        self.bal_onoff_3.setChecked(False)
-        self.bal_onoff_3.setObjectName("bal_onoff_3")
-        self.bal_r_3 = QtWidgets.QLabel(self.bal_wi_3)
-        self.bal_r_3.setGeometry(QtCore.QRect(55, 88, 56, 30))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 B")
-        font.setPointSize(20)
-        self.bal_r_3.setFont(font)
-        self.bal_r_3.setStyleSheet("background-color : rgba(0,0,0,0);\n"
-"image : url(./);\n"
-"")
-        self.bal_r_3.setObjectName("bal_r_3")
-        self.bal_b_3 = QtWidgets.QLabel(self.bal_wi_3)
-        self.bal_b_3.setGeometry(QtCore.QRect(55, 129, 56, 30))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 B")
-        font.setPointSize(20)
-        self.bal_b_3.setFont(font)
-        self.bal_b_3.setStyleSheet("background-color : rgba(0,0,0,0);\n"
-"image : url(./);\n"
-"")
-        self.bal_b_3.setObjectName("bal_b_3")
-        self.bal_w_3 = QtWidgets.QLabel(self.bal_wi_3)
-        self.bal_w_3.setGeometry(QtCore.QRect(55, 170, 56, 30))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 B")
-        font.setPointSize(20)
-        self.bal_w_3.setFont(font)
-        self.bal_w_3.setStyleSheet("background-color : rgba(0,0,0,0);\n"
-"image : url(./);\n"
-"")
-        self.bal_w_3.setObjectName("bal_w_3")
-        self.bal_su_3 = QtWidgets.QPushButton(self.bal_wi_3)
-        self.bal_su_3.setGeometry(QtCore.QRect(185, 170, 31, 31))
-        self.bal_su_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_su_3.setStyleSheet("QPushButton{image:url(./image/su_1.png); border:0px;color:}\n"
-"QPushButton:hover{image:url(./image/su_2.png); border:0px;}\n"
-"QPushButton:checked{image:url(./image/ck_1.png); border:0px;}\n"
-"QPushButton:checked:hover{image:url(./image/ck_2.png); border:0px;}\n"
-"\n"
-"")
-        self.bal_su_3.setText("")
-        self.bal_su_3.setCheckable(True)
-        self.bal_su_3.setObjectName("bal_su_3")
-        self.bal_clo_3 = QtWidgets.QPushButton(self.bal_wi_3)
-        self.bal_clo_3.setGeometry(QtCore.QRect(220, 170, 31, 31))
-        self.bal_clo_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_clo_3.setStyleSheet("QPushButton{image:url(./image/close_1.png); border:0px;color:}\n"
-"QPushButton:hover{image:url(./image/close_2.png); border:0px;}\n"
-"")
-        self.bal_clo_3.setText("")
-        self.bal_clo_3.setCheckable(False)
-        self.bal_clo_3.setObjectName("bal_clo_3")
-        self.bal_r_3.raise_()
-        self.bal_b_3.raise_()
-        self.bal_w_3.raise_()
-        self.bal_btn_3.raise_()
-        self.bal_text_3.raise_()
-        self.bal_label_3.raise_()
-        self.bal_onoff_3.raise_()
-        self.bal_su_3.raise_()
-        self.bal_clo_3.raise_()
-        self.bal_layout.addWidget(self.bal_wi_3, 0, 2, 1, 1)
-        self.bal_wi_4 = QtWidgets.QWidget(self.gridLayoutWidget)
-        self.bal_wi_4.setEnabled(True)
-        self.bal_wi_4.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
-"QWidget:hover{image:url(./image/kit_light2.png); border:0px; background-color : rgba(0,0,0,0);}\n"
-"\n"
-"\n"
-"")
-        self.bal_wi_4.setObjectName("bal_wi_4")
-        self.bal_text_4 = QtWidgets.QLineEdit(self.bal_wi_4)
-        self.bal_text_4.setEnabled(False)
-        self.bal_text_4.setGeometry(QtCore.QRect(15, 12, 241, 31))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(20)
-        self.bal_text_4.setFont(font)
-        self.bal_text_4.setStyleSheet("QLineEdit:Enabled{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}\n"
-"QLineEdit{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}")
-        self.bal_text_4.setMaxLength(30)
-        self.bal_text_4.setObjectName("bal_text_4")
-        self.bal_btn_4 = QtWidgets.QPushButton(self.bal_wi_4)
-        self.bal_btn_4.setGeometry(QtCore.QRect(0, 0, 261, 211))
-        self.bal_btn_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_btn_4.setStyleSheet("image : url(./);\n"
-"background-color : rgba(0,0,0,0);")
-        self.bal_btn_4.setText("")
-        self.bal_btn_4.setObjectName("bal_btn_4")
-        self.bal_label_4 = QtWidgets.QLineEdit(self.bal_wi_4)
-        self.bal_label_4.setEnabled(False)
-        self.bal_label_4.setGeometry(QtCore.QRect(15, 45, 141, 31))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(14)
-        self.bal_label_4.setFont(font)
-        self.bal_label_4.setStyleSheet("QLineEdit:Enabled{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}\n"
-"QLineEdit{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}")
-        self.bal_label_4.setMaxLength(30)
-        self.bal_label_4.setObjectName("bal_label_4")
-        self.bal_onoff_4 = QtWidgets.QPushButton(self.bal_wi_4)
-        self.bal_onoff_4.setGeometry(QtCore.QRect(160, 40, 91, 81))
-        self.bal_onoff_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_onoff_4.setStyleSheet("QPushButton{image:url(./image/off_1.png); border:0px; background-color : rgba(0,0,0,0);}\n"
-"QPushButton:hover{image:url(./image/off_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
-"QPushButton:checked{image:url(./image/on_1.png); border:0px;background-color : rgba(0,0,0,0);}\n"
-"QPushButton:checked:hover{image:url(./image/on_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
-"")
-        self.bal_onoff_4.setText("")
-        self.bal_onoff_4.setCheckable(True)
-        self.bal_onoff_4.setChecked(False)
-        self.bal_onoff_4.setObjectName("bal_onoff_4")
-        self.bal_r_4 = QtWidgets.QLabel(self.bal_wi_4)
-        self.bal_r_4.setGeometry(QtCore.QRect(55, 88, 56, 30))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 B")
-        font.setPointSize(20)
-        self.bal_r_4.setFont(font)
-        self.bal_r_4.setStyleSheet("background-color : rgba(0,0,0,0);\n"
-"image : url(./);\n"
-"")
-        self.bal_r_4.setObjectName("bal_r_4")
-        self.bal_b_4 = QtWidgets.QLabel(self.bal_wi_4)
-        self.bal_b_4.setGeometry(QtCore.QRect(55, 129, 56, 30))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 B")
-        font.setPointSize(20)
-        self.bal_b_4.setFont(font)
-        self.bal_b_4.setStyleSheet("background-color : rgba(0,0,0,0);\n"
-"image : url(./);\n"
-"")
-        self.bal_b_4.setObjectName("bal_b_4")
-        self.bal_w_4 = QtWidgets.QLabel(self.bal_wi_4)
-        self.bal_w_4.setGeometry(QtCore.QRect(55, 170, 56, 30))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 B")
-        font.setPointSize(20)
-        self.bal_w_4.setFont(font)
-        self.bal_w_4.setStyleSheet("background-color : rgba(0,0,0,0);\n"
-"image : url(./);\n"
-"")
-        self.bal_w_4.setObjectName("bal_w_4")
-        self.bal_su_4 = QtWidgets.QPushButton(self.bal_wi_4)
-        self.bal_su_4.setGeometry(QtCore.QRect(185, 170, 31, 31))
-        self.bal_su_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_su_4.setStyleSheet("QPushButton{image:url(./image/su_1.png); border:0px;color:}\n"
-"QPushButton:hover{image:url(./image/su_2.png); border:0px;}\n"
-"QPushButton:checked{image:url(./image/ck_1.png); border:0px;}\n"
-"QPushButton:checked:hover{image:url(./image/ck_2.png); border:0px;}\n"
-"\n"
-"")
-        self.bal_su_4.setText("")
-        self.bal_su_4.setCheckable(True)
-        self.bal_su_4.setObjectName("bal_su_4")
-        self.bal_clo_4 = QtWidgets.QPushButton(self.bal_wi_4)
-        self.bal_clo_4.setGeometry(QtCore.QRect(220, 170, 31, 31))
-        self.bal_clo_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_clo_4.setStyleSheet("QPushButton{image:url(./image/close_1.png); border:0px;color:}\n"
-"QPushButton:hover{image:url(./image/close_2.png); border:0px;}\n"
-"")
-        self.bal_clo_4.setText("")
-        self.bal_clo_4.setCheckable(False)
-        self.bal_clo_4.setObjectName("bal_clo_4")
-        self.bal_b_4.raise_()
-        self.bal_r_4.raise_()
-        self.bal_w_4.raise_()
-        self.bal_btn_4.raise_()
-        self.bal_text_4.raise_()
-        self.bal_label_4.raise_()
-        self.bal_onoff_4.raise_()
-        self.bal_su_4.raise_()
-        self.bal_clo_4.raise_()
-        self.bal_layout.addWidget(self.bal_wi_4, 0, 3, 1, 1)
-        self.bal_wi_5 = QtWidgets.QWidget(self.gridLayoutWidget)
-        self.bal_wi_5.setEnabled(True)
-        self.bal_wi_5.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
-"QWidget:hover{image:url(./image/kit_light2.png); border:0px; background-color : rgba(0,0,0,0);}\n"
-"\n"
-"\n"
-"")
-        self.bal_wi_5.setObjectName("bal_wi_5")
-        self.bal_text_5 = QtWidgets.QLineEdit(self.bal_wi_5)
-        self.bal_text_5.setEnabled(False)
-        self.bal_text_5.setGeometry(QtCore.QRect(15, 12, 241, 31))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(20)
-        self.bal_text_5.setFont(font)
-        self.bal_text_5.setStyleSheet("QLineEdit:Enabled{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}\n"
-"QLineEdit{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}")
-        self.bal_text_5.setMaxLength(30)
-        self.bal_text_5.setObjectName("bal_text_5")
-        self.bal_btn_5 = QtWidgets.QPushButton(self.bal_wi_5)
-        self.bal_btn_5.setGeometry(QtCore.QRect(0, 0, 261, 211))
-        self.bal_btn_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_btn_5.setStyleSheet("image : url(./);\n"
-"background-color : rgba(0,0,0,0);")
-        self.bal_btn_5.setText("")
-        self.bal_btn_5.setObjectName("bal_btn_5")
-        self.bal_label_5 = QtWidgets.QLineEdit(self.bal_wi_5)
-        self.bal_label_5.setEnabled(False)
-        self.bal_label_5.setGeometry(QtCore.QRect(15, 45, 141, 31))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(14)
-        self.bal_label_5.setFont(font)
-        self.bal_label_5.setStyleSheet("QLineEdit:Enabled{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}\n"
-"QLineEdit{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}")
-        self.bal_label_5.setMaxLength(30)
-        self.bal_label_5.setObjectName("bal_label_5")
-        self.bal_onoff_5 = QtWidgets.QPushButton(self.bal_wi_5)
-        self.bal_onoff_5.setGeometry(QtCore.QRect(160, 40, 91, 81))
-        self.bal_onoff_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_onoff_5.setStyleSheet("QPushButton{image:url(./image/off_1.png); border:0px; background-color : rgba(0,0,0,0);}\n"
-"QPushButton:hover{image:url(./image/off_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
-"QPushButton:checked{image:url(./image/on_1.png); border:0px;background-color : rgba(0,0,0,0);}\n"
-"QPushButton:checked:hover{image:url(./image/on_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
-"")
-        self.bal_onoff_5.setText("")
-        self.bal_onoff_5.setCheckable(True)
-        self.bal_onoff_5.setChecked(False)
-        self.bal_onoff_5.setObjectName("bal_onoff_5")
-        self.bal_r_5 = QtWidgets.QLabel(self.bal_wi_5)
-        self.bal_r_5.setGeometry(QtCore.QRect(55, 88, 56, 30))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 B")
-        font.setPointSize(20)
-        self.bal_r_5.setFont(font)
-        self.bal_r_5.setStyleSheet("background-color : rgba(0,0,0,0);\n"
-"image : url(./);\n"
-"")
-        self.bal_r_5.setObjectName("bal_r_5")
-        self.bal_b_5 = QtWidgets.QLabel(self.bal_wi_5)
-        self.bal_b_5.setGeometry(QtCore.QRect(55, 129, 56, 30))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 B")
-        font.setPointSize(20)
-        self.bal_b_5.setFont(font)
-        self.bal_b_5.setStyleSheet("background-color : rgba(0,0,0,0);\n"
-"image : url(./);\n"
-"")
-        self.bal_b_5.setObjectName("bal_b_5")
-        self.bal_w_5 = QtWidgets.QLabel(self.bal_wi_5)
-        self.bal_w_5.setGeometry(QtCore.QRect(55, 170, 56, 30))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 B")
-        font.setPointSize(20)
-        self.bal_w_5.setFont(font)
-        self.bal_w_5.setStyleSheet("background-color : rgba(0,0,0,0);\n"
-"image : url(./);\n"
-"")
-        self.bal_w_5.setObjectName("bal_w_5")
-        self.bal_su_5 = QtWidgets.QPushButton(self.bal_wi_5)
-        self.bal_su_5.setGeometry(QtCore.QRect(185, 170, 31, 31))
-        self.bal_su_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_su_5.setStyleSheet("QPushButton{image:url(./image/su_1.png); border:0px;color:}\n"
-"QPushButton:hover{image:url(./image/su_2.png); border:0px;}\n"
-"QPushButton:checked{image:url(./image/ck_1.png); border:0px;}\n"
-"QPushButton:checked:hover{image:url(./image/ck_2.png); border:0px;}\n"
-"\n"
-"")
-        self.bal_su_5.setText("")
-        self.bal_su_5.setCheckable(True)
-        self.bal_su_5.setObjectName("bal_su_5")
-        self.bal_clo_5 = QtWidgets.QPushButton(self.bal_wi_5)
-        self.bal_clo_5.setGeometry(QtCore.QRect(220, 170, 31, 31))
-        self.bal_clo_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_clo_5.setStyleSheet("QPushButton{image:url(./image/close_1.png); border:0px;color:}\n"
-"QPushButton:hover{image:url(./image/close_2.png); border:0px;}\n"
-"")
-        self.bal_clo_5.setText("")
-        self.bal_clo_5.setCheckable(False)
-        self.bal_clo_5.setObjectName("bal_clo_5")
-        self.bal_w_5.raise_()
-        self.bal_b_5.raise_()
-        self.bal_r_5.raise_()
-        self.bal_btn_5.raise_()
-        self.bal_text_5.raise_()
-        self.bal_label_5.raise_()
-        self.bal_onoff_5.raise_()
-        self.bal_su_5.raise_()
-        self.bal_clo_5.raise_()
-        self.bal_layout.addWidget(self.bal_wi_5, 1, 0, 1, 1)
         self.bal_wi_6 = QtWidgets.QWidget(self.gridLayoutWidget)
         self.bal_wi_6.setEnabled(True)
         self.bal_wi_6.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
@@ -1968,133 +1469,7 @@ class Ui_MainWindow(object):
         self.bal_onoff_6.raise_()
         self.bal_su_6.raise_()
         self.bal_clo_6.raise_()
-        self.bal_layout.addWidget(self.bal_wi_6, 1, 1, 1, 1)
-        self.bal_wi_7 = QtWidgets.QWidget(self.gridLayoutWidget)
-        self.bal_wi_7.setEnabled(True)
-        self.bal_wi_7.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
-"QWidget:hover{image:url(./image/kit_light2.png); border:0px; background-color : rgba(0,0,0,0);}\n"
-"\n"
-"\n"
-"")
-        self.bal_wi_7.setObjectName("bal_wi_7")
-        self.bal_text_7 = QtWidgets.QLineEdit(self.bal_wi_7)
-        self.bal_text_7.setEnabled(False)
-        self.bal_text_7.setGeometry(QtCore.QRect(15, 12, 241, 31))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(20)
-        self.bal_text_7.setFont(font)
-        self.bal_text_7.setStyleSheet("QLineEdit:Enabled{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}\n"
-"QLineEdit{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}")
-        self.bal_text_7.setMaxLength(30)
-        self.bal_text_7.setObjectName("bal_text_7")
-        self.bal_btn_7 = QtWidgets.QPushButton(self.bal_wi_7)
-        self.bal_btn_7.setGeometry(QtCore.QRect(0, 0, 261, 211))
-        self.bal_btn_7.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_btn_7.setStyleSheet("image : url(./);\n"
-"background-color : rgba(0,0,0,0);")
-        self.bal_btn_7.setText("")
-        self.bal_btn_7.setObjectName("bal_btn_7")
-        self.bal_label_7 = QtWidgets.QLineEdit(self.bal_wi_7)
-        self.bal_label_7.setEnabled(False)
-        self.bal_label_7.setGeometry(QtCore.QRect(15, 45, 141, 31))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 EB")
-        font.setPointSize(14)
-        self.bal_label_7.setFont(font)
-        self.bal_label_7.setStyleSheet("QLineEdit:Enabled{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}\n"
-"QLineEdit{\n"
-"background-color : rgba(0,0,0,0);\n"
-"color : rgb(255,255,255);\n"
-"image : NULL;\n"
-"}")
-        self.bal_label_7.setMaxLength(30)
-        self.bal_label_7.setObjectName("bal_label_7")
-        self.bal_onoff_7 = QtWidgets.QPushButton(self.bal_wi_7)
-        self.bal_onoff_7.setGeometry(QtCore.QRect(160, 40, 91, 81))
-        self.bal_onoff_7.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_onoff_7.setStyleSheet("QPushButton{image:url(./image/off_1.png); border:0px; background-color : rgba(0,0,0,0);}\n"
-"QPushButton:hover{image:url(./image/off_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
-"QPushButton:checked{image:url(./image/on_1.png); border:0px;background-color : rgba(0,0,0,0);}\n"
-"QPushButton:checked:hover{image:url(./image/on_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
-"")
-        self.bal_onoff_7.setText("")
-        self.bal_onoff_7.setCheckable(True)
-        self.bal_onoff_7.setChecked(False)
-        self.bal_onoff_7.setObjectName("bal_onoff_7")
-        self.bal_r_7 = QtWidgets.QLabel(self.bal_wi_7)
-        self.bal_r_7.setGeometry(QtCore.QRect(55, 88, 56, 30))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 B")
-        font.setPointSize(20)
-        self.bal_r_7.setFont(font)
-        self.bal_r_7.setStyleSheet("background-color : rgba(0,0,0,0);\n"
-"image : url(./);\n"
-"")
-        self.bal_r_7.setObjectName("bal_r_7")
-        self.bal_b_7 = QtWidgets.QLabel(self.bal_wi_7)
-        self.bal_b_7.setGeometry(QtCore.QRect(55, 129, 56, 30))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 B")
-        font.setPointSize(20)
-        self.bal_b_7.setFont(font)
-        self.bal_b_7.setStyleSheet("background-color : rgba(0,0,0,0);\n"
-"image : url(./);\n"
-"")
-        self.bal_b_7.setObjectName("bal_b_7")
-        self.bal_w_7 = QtWidgets.QLabel(self.bal_wi_7)
-        self.bal_w_7.setGeometry(QtCore.QRect(55, 170, 56, 30))
-        font = QtGui.QFont()
-        font.setFamily("서울남산체 B")
-        font.setPointSize(20)
-        self.bal_w_7.setFont(font)
-        self.bal_w_7.setStyleSheet("background-color : rgba(0,0,0,0);\n"
-"image : url(./);\n"
-"")
-        self.bal_w_7.setObjectName("bal_w_7")
-        self.bal_su_7 = QtWidgets.QPushButton(self.bal_wi_7)
-        self.bal_su_7.setGeometry(QtCore.QRect(185, 170, 31, 31))
-        self.bal_su_7.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_su_7.setStyleSheet("QPushButton{image:url(./image/su_1.png); border:0px;color:}\n"
-"QPushButton:hover{image:url(./image/su_2.png); border:0px;}\n"
-"QPushButton:checked{image:url(./image/ck_1.png); border:0px;}\n"
-"QPushButton:checked:hover{image:url(./image/ck_2.png); border:0px;}\n"
-"\n"
-"")
-        self.bal_su_7.setText("")
-        self.bal_su_7.setCheckable(True)
-        self.bal_su_7.setObjectName("bal_su_7")
-        self.bal_clo_7 = QtWidgets.QPushButton(self.bal_wi_7)
-        self.bal_clo_7.setGeometry(QtCore.QRect(220, 170, 31, 31))
-        self.bal_clo_7.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.bal_clo_7.setStyleSheet("QPushButton{image:url(./image/close_1.png); border:0px;color:}\n"
-"QPushButton:hover{image:url(./image/close_2.png); border:0px;}\n"
-"")
-        self.bal_clo_7.setText("")
-        self.bal_clo_7.setCheckable(False)
-        self.bal_clo_7.setObjectName("bal_clo_7")
-        self.bal_r_7.raise_()
-        self.bal_b_7.raise_()
-        self.bal_w_7.raise_()
-        self.bal_btn_7.raise_()
-        self.bal_text_7.raise_()
-        self.bal_label_7.raise_()
-        self.bal_onoff_7.raise_()
-        self.bal_su_7.raise_()
-        self.bal_clo_7.raise_()
-        self.bal_layout.addWidget(self.bal_wi_7, 1, 2, 1, 1)
+        self.bal_layout.addWidget(self.bal_wi_6, 1, 2, 1, 1)
         self.bal_wi_8 = QtWidgets.QWidget(self.gridLayoutWidget)
         self.bal_wi_8.setEnabled(True)
         self.bal_wi_8.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
@@ -2220,7 +1595,637 @@ class Ui_MainWindow(object):
         self.bal_onoff_8.raise_()
         self.bal_su_8.raise_()
         self.bal_clo_8.raise_()
-        self.bal_layout.addWidget(self.bal_wi_8, 1, 3, 1, 1)
+        self.bal_layout.addWidget(self.bal_wi_8, 1, 4, 1, 1)
+        self.bal_wi_3 = QtWidgets.QWidget(self.gridLayoutWidget)
+        self.bal_wi_3.setEnabled(True)
+        self.bal_wi_3.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
+"QWidget:hover{image:url(./image/kit_light2.png); border:0px; background-color : rgba(0,0,0,0);}\n"
+"\n"
+"\n"
+"")
+        self.bal_wi_3.setObjectName("bal_wi_3")
+        self.bal_text_3 = QtWidgets.QLineEdit(self.bal_wi_3)
+        self.bal_text_3.setEnabled(False)
+        self.bal_text_3.setGeometry(QtCore.QRect(15, 12, 241, 31))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(20)
+        self.bal_text_3.setFont(font)
+        self.bal_text_3.setStyleSheet("QLineEdit:Enabled{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}\n"
+"QLineEdit{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}")
+        self.bal_text_3.setMaxLength(30)
+        self.bal_text_3.setObjectName("bal_text_3")
+        self.bal_btn_3 = QtWidgets.QPushButton(self.bal_wi_3)
+        self.bal_btn_3.setGeometry(QtCore.QRect(0, 0, 261, 211))
+        self.bal_btn_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_btn_3.setStyleSheet("image : url(./);\n"
+"background-color : rgba(0,0,0,0);")
+        self.bal_btn_3.setText("")
+        self.bal_btn_3.setObjectName("bal_btn_3")
+        self.bal_label_3 = QtWidgets.QLineEdit(self.bal_wi_3)
+        self.bal_label_3.setEnabled(False)
+        self.bal_label_3.setGeometry(QtCore.QRect(15, 45, 141, 31))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(14)
+        self.bal_label_3.setFont(font)
+        self.bal_label_3.setStyleSheet("QLineEdit:Enabled{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}\n"
+"QLineEdit{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}")
+        self.bal_label_3.setMaxLength(30)
+        self.bal_label_3.setObjectName("bal_label_3")
+        self.bal_onoff_3 = QtWidgets.QPushButton(self.bal_wi_3)
+        self.bal_onoff_3.setGeometry(QtCore.QRect(160, 40, 91, 81))
+        self.bal_onoff_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_onoff_3.setStyleSheet("QPushButton{image:url(./image/off_1.png); border:0px; background-color : rgba(0,0,0,0);}\n"
+"QPushButton:hover{image:url(./image/off_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
+"QPushButton:checked{image:url(./image/on_1.png); border:0px;background-color : rgba(0,0,0,0);}\n"
+"QPushButton:checked:hover{image:url(./image/on_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
+"")
+        self.bal_onoff_3.setText("")
+        self.bal_onoff_3.setCheckable(True)
+        self.bal_onoff_3.setChecked(False)
+        self.bal_onoff_3.setObjectName("bal_onoff_3")
+        self.bal_r_3 = QtWidgets.QLabel(self.bal_wi_3)
+        self.bal_r_3.setGeometry(QtCore.QRect(55, 88, 56, 30))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 B")
+        font.setPointSize(20)
+        self.bal_r_3.setFont(font)
+        self.bal_r_3.setStyleSheet("background-color : rgba(0,0,0,0);\n"
+"image : url(./);\n"
+"")
+        self.bal_r_3.setObjectName("bal_r_3")
+        self.bal_b_3 = QtWidgets.QLabel(self.bal_wi_3)
+        self.bal_b_3.setGeometry(QtCore.QRect(55, 129, 56, 30))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 B")
+        font.setPointSize(20)
+        self.bal_b_3.setFont(font)
+        self.bal_b_3.setStyleSheet("background-color : rgba(0,0,0,0);\n"
+"image : url(./);\n"
+"")
+        self.bal_b_3.setObjectName("bal_b_3")
+        self.bal_w_3 = QtWidgets.QLabel(self.bal_wi_3)
+        self.bal_w_3.setGeometry(QtCore.QRect(55, 170, 56, 30))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 B")
+        font.setPointSize(20)
+        self.bal_w_3.setFont(font)
+        self.bal_w_3.setStyleSheet("background-color : rgba(0,0,0,0);\n"
+"image : url(./);\n"
+"")
+        self.bal_w_3.setObjectName("bal_w_3")
+        self.bal_su_3 = QtWidgets.QPushButton(self.bal_wi_3)
+        self.bal_su_3.setGeometry(QtCore.QRect(185, 170, 31, 31))
+        self.bal_su_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_su_3.setStyleSheet("QPushButton{image:url(./image/su_1.png); border:0px;color:}\n"
+"QPushButton:hover{image:url(./image/su_2.png); border:0px;}\n"
+"QPushButton:checked{image:url(./image/ck_1.png); border:0px;}\n"
+"QPushButton:checked:hover{image:url(./image/ck_2.png); border:0px;}\n"
+"\n"
+"")
+        self.bal_su_3.setText("")
+        self.bal_su_3.setCheckable(True)
+        self.bal_su_3.setObjectName("bal_su_3")
+        self.bal_clo_3 = QtWidgets.QPushButton(self.bal_wi_3)
+        self.bal_clo_3.setGeometry(QtCore.QRect(220, 170, 31, 31))
+        self.bal_clo_3.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_clo_3.setStyleSheet("QPushButton{image:url(./image/close_1.png); border:0px;color:}\n"
+"QPushButton:hover{image:url(./image/close_2.png); border:0px;}\n"
+"")
+        self.bal_clo_3.setText("")
+        self.bal_clo_3.setCheckable(False)
+        self.bal_clo_3.setObjectName("bal_clo_3")
+        self.bal_r_3.raise_()
+        self.bal_b_3.raise_()
+        self.bal_w_3.raise_()
+        self.bal_btn_3.raise_()
+        self.bal_text_3.raise_()
+        self.bal_label_3.raise_()
+        self.bal_onoff_3.raise_()
+        self.bal_su_3.raise_()
+        self.bal_clo_3.raise_()
+        self.bal_layout.addWidget(self.bal_wi_3, 0, 1, 1, 1)
+        self.bal_wi_5 = QtWidgets.QWidget(self.gridLayoutWidget)
+        self.bal_wi_5.setEnabled(True)
+        self.bal_wi_5.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
+"QWidget:hover{image:url(./image/kit_light2.png); border:0px; background-color : rgba(0,0,0,0);}\n"
+"\n"
+"\n"
+"")
+        self.bal_wi_5.setObjectName("bal_wi_5")
+        self.bal_text_5 = QtWidgets.QLineEdit(self.bal_wi_5)
+        self.bal_text_5.setEnabled(False)
+        self.bal_text_5.setGeometry(QtCore.QRect(15, 12, 241, 31))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(20)
+        self.bal_text_5.setFont(font)
+        self.bal_text_5.setStyleSheet("QLineEdit:Enabled{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}\n"
+"QLineEdit{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}")
+        self.bal_text_5.setMaxLength(30)
+        self.bal_text_5.setObjectName("bal_text_5")
+        self.bal_btn_5 = QtWidgets.QPushButton(self.bal_wi_5)
+        self.bal_btn_5.setGeometry(QtCore.QRect(0, 0, 261, 211))
+        self.bal_btn_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_btn_5.setStyleSheet("image : url(./);\n"
+"background-color : rgba(0,0,0,0);")
+        self.bal_btn_5.setText("")
+        self.bal_btn_5.setObjectName("bal_btn_5")
+        self.bal_label_5 = QtWidgets.QLineEdit(self.bal_wi_5)
+        self.bal_label_5.setEnabled(False)
+        self.bal_label_5.setGeometry(QtCore.QRect(15, 45, 141, 31))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(14)
+        self.bal_label_5.setFont(font)
+        self.bal_label_5.setStyleSheet("QLineEdit:Enabled{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}\n"
+"QLineEdit{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}")
+        self.bal_label_5.setMaxLength(30)
+        self.bal_label_5.setObjectName("bal_label_5")
+        self.bal_onoff_5 = QtWidgets.QPushButton(self.bal_wi_5)
+        self.bal_onoff_5.setGeometry(QtCore.QRect(160, 40, 91, 81))
+        self.bal_onoff_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_onoff_5.setStyleSheet("QPushButton{image:url(./image/off_1.png); border:0px; background-color : rgba(0,0,0,0);}\n"
+"QPushButton:hover{image:url(./image/off_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
+"QPushButton:checked{image:url(./image/on_1.png); border:0px;background-color : rgba(0,0,0,0);}\n"
+"QPushButton:checked:hover{image:url(./image/on_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
+"")
+        self.bal_onoff_5.setText("")
+        self.bal_onoff_5.setCheckable(True)
+        self.bal_onoff_5.setChecked(False)
+        self.bal_onoff_5.setObjectName("bal_onoff_5")
+        self.bal_r_5 = QtWidgets.QLabel(self.bal_wi_5)
+        self.bal_r_5.setGeometry(QtCore.QRect(55, 88, 56, 30))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 B")
+        font.setPointSize(20)
+        self.bal_r_5.setFont(font)
+        self.bal_r_5.setStyleSheet("background-color : rgba(0,0,0,0);\n"
+"image : url(./);\n"
+"")
+        self.bal_r_5.setObjectName("bal_r_5")
+        self.bal_b_5 = QtWidgets.QLabel(self.bal_wi_5)
+        self.bal_b_5.setGeometry(QtCore.QRect(55, 129, 56, 30))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 B")
+        font.setPointSize(20)
+        self.bal_b_5.setFont(font)
+        self.bal_b_5.setStyleSheet("background-color : rgba(0,0,0,0);\n"
+"image : url(./);\n"
+"")
+        self.bal_b_5.setObjectName("bal_b_5")
+        self.bal_w_5 = QtWidgets.QLabel(self.bal_wi_5)
+        self.bal_w_5.setGeometry(QtCore.QRect(55, 170, 56, 30))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 B")
+        font.setPointSize(20)
+        self.bal_w_5.setFont(font)
+        self.bal_w_5.setStyleSheet("background-color : rgba(0,0,0,0);\n"
+"image : url(./);\n"
+"")
+        self.bal_w_5.setObjectName("bal_w_5")
+        self.bal_su_5 = QtWidgets.QPushButton(self.bal_wi_5)
+        self.bal_su_5.setGeometry(QtCore.QRect(185, 170, 31, 31))
+        self.bal_su_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_su_5.setStyleSheet("QPushButton{image:url(./image/su_1.png); border:0px;color:}\n"
+"QPushButton:hover{image:url(./image/su_2.png); border:0px;}\n"
+"QPushButton:checked{image:url(./image/ck_1.png); border:0px;}\n"
+"QPushButton:checked:hover{image:url(./image/ck_2.png); border:0px;}\n"
+"\n"
+"")
+        self.bal_su_5.setText("")
+        self.bal_su_5.setCheckable(True)
+        self.bal_su_5.setObjectName("bal_su_5")
+        self.bal_clo_5 = QtWidgets.QPushButton(self.bal_wi_5)
+        self.bal_clo_5.setGeometry(QtCore.QRect(220, 170, 31, 31))
+        self.bal_clo_5.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_clo_5.setStyleSheet("QPushButton{image:url(./image/close_1.png); border:0px;color:}\n"
+"QPushButton:hover{image:url(./image/close_2.png); border:0px;}\n"
+"")
+        self.bal_clo_5.setText("")
+        self.bal_clo_5.setCheckable(False)
+        self.bal_clo_5.setObjectName("bal_clo_5")
+        self.bal_w_5.raise_()
+        self.bal_b_5.raise_()
+        self.bal_r_5.raise_()
+        self.bal_btn_5.raise_()
+        self.bal_text_5.raise_()
+        self.bal_label_5.raise_()
+        self.bal_onoff_5.raise_()
+        self.bal_su_5.raise_()
+        self.bal_clo_5.raise_()
+        self.bal_layout.addWidget(self.bal_wi_5, 0, 2, 1, 1)
+        self.bal_wi_2 = QtWidgets.QWidget(self.gridLayoutWidget)
+        self.bal_wi_2.setEnabled(True)
+        self.bal_wi_2.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
+"QWidget:hover{image:url(./image/kit_light2.png); border:0px; background-color : rgba(0,0,0,0);}\n"
+"\n"
+"\n"
+"")
+        self.bal_wi_2.setObjectName("bal_wi_2")
+        self.bal_text_2 = QtWidgets.QLineEdit(self.bal_wi_2)
+        self.bal_text_2.setEnabled(False)
+        self.bal_text_2.setGeometry(QtCore.QRect(15, 12, 241, 31))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(20)
+        self.bal_text_2.setFont(font)
+        self.bal_text_2.setStyleSheet("QLineEdit:Enabled{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}\n"
+"QLineEdit{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}")
+        self.bal_text_2.setMaxLength(30)
+        self.bal_text_2.setObjectName("bal_text_2")
+        self.bal_btn_2 = QtWidgets.QPushButton(self.bal_wi_2)
+        self.bal_btn_2.setGeometry(QtCore.QRect(0, 0, 261, 211))
+        self.bal_btn_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_btn_2.setStyleSheet("image : url(./);\n"
+"background-color : rgba(0,0,0,0);")
+        self.bal_btn_2.setText("")
+        self.bal_btn_2.setObjectName("bal_btn_2")
+        self.bal_label_2 = QtWidgets.QLineEdit(self.bal_wi_2)
+        self.bal_label_2.setEnabled(False)
+        self.bal_label_2.setGeometry(QtCore.QRect(15, 45, 141, 31))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(14)
+        self.bal_label_2.setFont(font)
+        self.bal_label_2.setStyleSheet("QLineEdit:Enabled{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}\n"
+"QLineEdit{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}")
+        self.bal_label_2.setMaxLength(30)
+        self.bal_label_2.setObjectName("bal_label_2")
+        self.bal_onoff_2 = QtWidgets.QPushButton(self.bal_wi_2)
+        self.bal_onoff_2.setGeometry(QtCore.QRect(160, 40, 91, 81))
+        self.bal_onoff_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_onoff_2.setStyleSheet("QPushButton{image:url(./image/off_1.png); border:0px; background-color : rgba(0,0,0,0);}\n"
+"QPushButton:hover{image:url(./image/off_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
+"QPushButton:checked{image:url(./image/on_1.png); border:0px;background-color : rgba(0,0,0,0);}\n"
+"QPushButton:checked:hover{image:url(./image/on_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
+"")
+        self.bal_onoff_2.setText("")
+        self.bal_onoff_2.setCheckable(True)
+        self.bal_onoff_2.setChecked(False)
+        self.bal_onoff_2.setObjectName("bal_onoff_2")
+        self.bal_r_2 = QtWidgets.QLabel(self.bal_wi_2)
+        self.bal_r_2.setGeometry(QtCore.QRect(55, 88, 56, 30))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 B")
+        font.setPointSize(20)
+        self.bal_r_2.setFont(font)
+        self.bal_r_2.setStyleSheet("background-color : rgba(0,0,0,0);\n"
+"image : url(./);\n"
+"")
+        self.bal_r_2.setObjectName("bal_r_2")
+        self.bal_b_2 = QtWidgets.QLabel(self.bal_wi_2)
+        self.bal_b_2.setGeometry(QtCore.QRect(55, 129, 56, 30))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 B")
+        font.setPointSize(20)
+        self.bal_b_2.setFont(font)
+        self.bal_b_2.setStyleSheet("background-color : rgba(0,0,0,0);\n"
+"image : url(./);\n"
+"")
+        self.bal_b_2.setObjectName("bal_b_2")
+        self.bal_w_2 = QtWidgets.QLabel(self.bal_wi_2)
+        self.bal_w_2.setGeometry(QtCore.QRect(55, 170, 56, 30))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 B")
+        font.setPointSize(20)
+        self.bal_w_2.setFont(font)
+        self.bal_w_2.setStyleSheet("background-color : rgba(0,0,0,0);\n"
+"image : url(./);\n"
+"")
+        self.bal_w_2.setObjectName("bal_w_2")
+        self.bal_su_2 = QtWidgets.QPushButton(self.bal_wi_2)
+        self.bal_su_2.setGeometry(QtCore.QRect(185, 170, 31, 31))
+        self.bal_su_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_su_2.setStyleSheet("QPushButton{image:url(./image/su_1.png); border:0px;color:}\n"
+"QPushButton:hover{image:url(./image/su_2.png); border:0px;}\n"
+"QPushButton:checked{image:url(./image/ck_1.png); border:0px;}\n"
+"QPushButton:checked:hover{image:url(./image/ck_2.png); border:0px;}\n"
+"\n"
+"")
+        self.bal_su_2.setText("")
+        self.bal_su_2.setCheckable(True)
+        self.bal_su_2.setObjectName("bal_su_2")
+        self.bal_clo_2 = QtWidgets.QPushButton(self.bal_wi_2)
+        self.bal_clo_2.setGeometry(QtCore.QRect(220, 170, 31, 31))
+        self.bal_clo_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_clo_2.setStyleSheet("QPushButton{image:url(./image/close_1.png); border:0px;color:}\n"
+"QPushButton:hover{image:url(./image/close_2.png); border:0px;}\n"
+"")
+        self.bal_clo_2.setText("")
+        self.bal_clo_2.setCheckable(False)
+        self.bal_clo_2.setObjectName("bal_clo_2")
+        self.bal_w_2.raise_()
+        self.bal_b_2.raise_()
+        self.bal_r_2.raise_()
+        self.bal_btn_2.raise_()
+        self.bal_text_2.raise_()
+        self.bal_label_2.raise_()
+        self.bal_onoff_2.raise_()
+        self.bal_su_2.raise_()
+        self.bal_clo_2.raise_()
+        self.bal_layout.addWidget(self.bal_wi_2, 1, 0, 1, 1)
+        self.bal_wi_4 = QtWidgets.QWidget(self.gridLayoutWidget)
+        self.bal_wi_4.setEnabled(True)
+        self.bal_wi_4.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
+"QWidget:hover{image:url(./image/kit_light2.png); border:0px; background-color : rgba(0,0,0,0);}\n"
+"\n"
+"\n"
+"")
+        self.bal_wi_4.setObjectName("bal_wi_4")
+        self.bal_text_4 = QtWidgets.QLineEdit(self.bal_wi_4)
+        self.bal_text_4.setEnabled(False)
+        self.bal_text_4.setGeometry(QtCore.QRect(15, 12, 241, 31))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(20)
+        self.bal_text_4.setFont(font)
+        self.bal_text_4.setStyleSheet("QLineEdit:Enabled{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}\n"
+"QLineEdit{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}")
+        self.bal_text_4.setMaxLength(30)
+        self.bal_text_4.setObjectName("bal_text_4")
+        self.bal_btn_4 = QtWidgets.QPushButton(self.bal_wi_4)
+        self.bal_btn_4.setGeometry(QtCore.QRect(0, 0, 261, 211))
+        self.bal_btn_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_btn_4.setStyleSheet("image : url(./);\n"
+"background-color : rgba(0,0,0,0);")
+        self.bal_btn_4.setText("")
+        self.bal_btn_4.setObjectName("bal_btn_4")
+        self.bal_label_4 = QtWidgets.QLineEdit(self.bal_wi_4)
+        self.bal_label_4.setEnabled(False)
+        self.bal_label_4.setGeometry(QtCore.QRect(15, 45, 141, 31))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(14)
+        self.bal_label_4.setFont(font)
+        self.bal_label_4.setStyleSheet("QLineEdit:Enabled{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}\n"
+"QLineEdit{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}")
+        self.bal_label_4.setMaxLength(30)
+        self.bal_label_4.setObjectName("bal_label_4")
+        self.bal_onoff_4 = QtWidgets.QPushButton(self.bal_wi_4)
+        self.bal_onoff_4.setGeometry(QtCore.QRect(160, 40, 91, 81))
+        self.bal_onoff_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_onoff_4.setStyleSheet("QPushButton{image:url(./image/off_1.png); border:0px; background-color : rgba(0,0,0,0);}\n"
+"QPushButton:hover{image:url(./image/off_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
+"QPushButton:checked{image:url(./image/on_1.png); border:0px;background-color : rgba(0,0,0,0);}\n"
+"QPushButton:checked:hover{image:url(./image/on_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
+"")
+        self.bal_onoff_4.setText("")
+        self.bal_onoff_4.setCheckable(True)
+        self.bal_onoff_4.setChecked(False)
+        self.bal_onoff_4.setObjectName("bal_onoff_4")
+        self.bal_r_4 = QtWidgets.QLabel(self.bal_wi_4)
+        self.bal_r_4.setGeometry(QtCore.QRect(55, 88, 56, 30))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 B")
+        font.setPointSize(20)
+        self.bal_r_4.setFont(font)
+        self.bal_r_4.setStyleSheet("background-color : rgba(0,0,0,0);\n"
+"image : url(./);\n"
+"")
+        self.bal_r_4.setObjectName("bal_r_4")
+        self.bal_b_4 = QtWidgets.QLabel(self.bal_wi_4)
+        self.bal_b_4.setGeometry(QtCore.QRect(55, 129, 56, 30))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 B")
+        font.setPointSize(20)
+        self.bal_b_4.setFont(font)
+        self.bal_b_4.setStyleSheet("background-color : rgba(0,0,0,0);\n"
+"image : url(./);\n"
+"")
+        self.bal_b_4.setObjectName("bal_b_4")
+        self.bal_w_4 = QtWidgets.QLabel(self.bal_wi_4)
+        self.bal_w_4.setGeometry(QtCore.QRect(55, 170, 56, 30))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 B")
+        font.setPointSize(20)
+        self.bal_w_4.setFont(font)
+        self.bal_w_4.setStyleSheet("background-color : rgba(0,0,0,0);\n"
+"image : url(./);\n"
+"")
+        self.bal_w_4.setObjectName("bal_w_4")
+        self.bal_su_4 = QtWidgets.QPushButton(self.bal_wi_4)
+        self.bal_su_4.setGeometry(QtCore.QRect(185, 170, 31, 31))
+        self.bal_su_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_su_4.setStyleSheet("QPushButton{image:url(./image/su_1.png); border:0px;color:}\n"
+"QPushButton:hover{image:url(./image/su_2.png); border:0px;}\n"
+"QPushButton:checked{image:url(./image/ck_1.png); border:0px;}\n"
+"QPushButton:checked:hover{image:url(./image/ck_2.png); border:0px;}\n"
+"\n"
+"")
+        self.bal_su_4.setText("")
+        self.bal_su_4.setCheckable(True)
+        self.bal_su_4.setObjectName("bal_su_4")
+        self.bal_clo_4 = QtWidgets.QPushButton(self.bal_wi_4)
+        self.bal_clo_4.setGeometry(QtCore.QRect(220, 170, 31, 31))
+        self.bal_clo_4.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_clo_4.setStyleSheet("QPushButton{image:url(./image/close_1.png); border:0px;color:}\n"
+"QPushButton:hover{image:url(./image/close_2.png); border:0px;}\n"
+"")
+        self.bal_clo_4.setText("")
+        self.bal_clo_4.setCheckable(False)
+        self.bal_clo_4.setObjectName("bal_clo_4")
+        self.bal_b_4.raise_()
+        self.bal_r_4.raise_()
+        self.bal_w_4.raise_()
+        self.bal_btn_4.raise_()
+        self.bal_text_4.raise_()
+        self.bal_label_4.raise_()
+        self.bal_onoff_4.raise_()
+        self.bal_su_4.raise_()
+        self.bal_clo_4.raise_()
+        self.bal_layout.addWidget(self.bal_wi_4, 1, 1, 1, 1)
+        self.bal_wi_7 = QtWidgets.QWidget(self.gridLayoutWidget)
+        self.bal_wi_7.setEnabled(True)
+        self.bal_wi_7.setStyleSheet("QWidget{image:url(./image/kit_light.png); border:0px; background-color : rgba(0,0,0,0);}\n"
+"QWidget:hover{image:url(./image/kit_light2.png); border:0px; background-color : rgba(0,0,0,0);}\n"
+"\n"
+"\n"
+"")
+        self.bal_wi_7.setObjectName("bal_wi_7")
+        self.bal_text_7 = QtWidgets.QLineEdit(self.bal_wi_7)
+        self.bal_text_7.setEnabled(False)
+        self.bal_text_7.setGeometry(QtCore.QRect(15, 12, 241, 31))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(20)
+        self.bal_text_7.setFont(font)
+        self.bal_text_7.setStyleSheet("QLineEdit:Enabled{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}\n"
+"QLineEdit{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}")
+        self.bal_text_7.setMaxLength(30)
+        self.bal_text_7.setObjectName("bal_text_7")
+        self.bal_btn_7 = QtWidgets.QPushButton(self.bal_wi_7)
+        self.bal_btn_7.setGeometry(QtCore.QRect(0, 0, 261, 211))
+        self.bal_btn_7.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_btn_7.setStyleSheet("image : url(./);\n"
+"background-color : rgba(0,0,0,0);")
+        self.bal_btn_7.setText("")
+        self.bal_btn_7.setObjectName("bal_btn_7")
+        self.bal_label_7 = QtWidgets.QLineEdit(self.bal_wi_7)
+        self.bal_label_7.setEnabled(False)
+        self.bal_label_7.setGeometry(QtCore.QRect(15, 45, 141, 31))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 EB")
+        font.setPointSize(14)
+        self.bal_label_7.setFont(font)
+        self.bal_label_7.setStyleSheet("QLineEdit:Enabled{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}\n"
+"QLineEdit{\n"
+"background-color : rgba(0,0,0,0);\n"
+"color : rgb(255,255,255);\n"
+"image : NULL;\n"
+"}")
+        self.bal_label_7.setMaxLength(30)
+        self.bal_label_7.setObjectName("bal_label_7")
+        self.bal_onoff_7 = QtWidgets.QPushButton(self.bal_wi_7)
+        self.bal_onoff_7.setGeometry(QtCore.QRect(160, 40, 91, 81))
+        self.bal_onoff_7.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_onoff_7.setStyleSheet("QPushButton{image:url(./image/off_1.png); border:0px; background-color : rgba(0,0,0,0);}\n"
+"QPushButton:hover{image:url(./image/off_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
+"QPushButton:checked{image:url(./image/on_1.png); border:0px;background-color : rgba(0,0,0,0);}\n"
+"QPushButton:checked:hover{image:url(./image/on_2.png); border:0px;background-color : rgba(0,0,0,0);}\n"
+"")
+        self.bal_onoff_7.setText("")
+        self.bal_onoff_7.setCheckable(True)
+        self.bal_onoff_7.setChecked(False)
+        self.bal_onoff_7.setObjectName("bal_onoff_7")
+        self.bal_r_7 = QtWidgets.QLabel(self.bal_wi_7)
+        self.bal_r_7.setGeometry(QtCore.QRect(55, 88, 56, 30))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 B")
+        font.setPointSize(20)
+        self.bal_r_7.setFont(font)
+        self.bal_r_7.setStyleSheet("background-color : rgba(0,0,0,0);\n"
+"image : url(./);\n"
+"")
+        self.bal_r_7.setObjectName("bal_r_7")
+        self.bal_b_7 = QtWidgets.QLabel(self.bal_wi_7)
+        self.bal_b_7.setGeometry(QtCore.QRect(55, 129, 56, 30))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 B")
+        font.setPointSize(20)
+        self.bal_b_7.setFont(font)
+        self.bal_b_7.setStyleSheet("background-color : rgba(0,0,0,0);\n"
+"image : url(./);\n"
+"")
+        self.bal_b_7.setObjectName("bal_b_7")
+        self.bal_w_7 = QtWidgets.QLabel(self.bal_wi_7)
+        self.bal_w_7.setGeometry(QtCore.QRect(55, 170, 56, 30))
+        font = QtGui.QFont()
+        font.setFamily("서울남산체 B")
+        font.setPointSize(20)
+        self.bal_w_7.setFont(font)
+        self.bal_w_7.setStyleSheet("background-color : rgba(0,0,0,0);\n"
+"image : url(./);\n"
+"")
+        self.bal_w_7.setObjectName("bal_w_7")
+        self.bal_su_7 = QtWidgets.QPushButton(self.bal_wi_7)
+        self.bal_su_7.setGeometry(QtCore.QRect(185, 170, 31, 31))
+        self.bal_su_7.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_su_7.setStyleSheet("QPushButton{image:url(./image/su_1.png); border:0px;color:}\n"
+"QPushButton:hover{image:url(./image/su_2.png); border:0px;}\n"
+"QPushButton:checked{image:url(./image/ck_1.png); border:0px;}\n"
+"QPushButton:checked:hover{image:url(./image/ck_2.png); border:0px;}\n"
+"\n"
+"")
+        self.bal_su_7.setText("")
+        self.bal_su_7.setCheckable(True)
+        self.bal_su_7.setObjectName("bal_su_7")
+        self.bal_clo_7 = QtWidgets.QPushButton(self.bal_wi_7)
+        self.bal_clo_7.setGeometry(QtCore.QRect(220, 170, 31, 31))
+        self.bal_clo_7.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_clo_7.setStyleSheet("QPushButton{image:url(./image/close_1.png); border:0px;color:}\n"
+"QPushButton:hover{image:url(./image/close_2.png); border:0px;}\n"
+"")
+        self.bal_clo_7.setText("")
+        self.bal_clo_7.setCheckable(False)
+        self.bal_clo_7.setObjectName("bal_clo_7")
+        self.bal_r_7.raise_()
+        self.bal_b_7.raise_()
+        self.bal_w_7.raise_()
+        self.bal_btn_7.raise_()
+        self.bal_text_7.raise_()
+        self.bal_label_7.raise_()
+        self.bal_onoff_7.raise_()
+        self.bal_su_7.raise_()
+        self.bal_clo_7.raise_()
+        self.bal_layout.addWidget(self.bal_wi_7, 0, 4, 1, 1)
         self.horizontalLayoutWidget_2 = QtWidgets.QWidget(self.balgi)
         self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(0, 480, 1411, 121))
         self.horizontalLayoutWidget_2.setObjectName("horizontalLayoutWidget_2")
@@ -2433,24 +2438,24 @@ class Ui_MainWindow(object):
         self.label_4.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_4.setObjectName("label_4")
         self.horizontalLayout.addWidget(self.widget_13)
-        self.pushButton_14 = QtWidgets.QPushButton(self.balgi)
-        self.pushButton_14.setGeometry(QtCore.QRect(30, 210, 31, 61))
-        self.pushButton_14.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_14.setStyleSheet("QPushButton{image:url(./image/left_1.png); border:0px;color:}\n"
+        self.bal_left_btn = QtWidgets.QPushButton(self.balgi)
+        self.bal_left_btn.setGeometry(QtCore.QRect(30, 210, 31, 61))
+        self.bal_left_btn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_left_btn.setStyleSheet("QPushButton{image:url(./image/left_1.png); border:0px;color:}\n"
 "QPushButton:hover{image:url(./image/left_2.png); border:0px;}\n"
 "")
-        self.pushButton_14.setText("")
-        self.pushButton_14.setCheckable(False)
-        self.pushButton_14.setObjectName("pushButton_14")
-        self.pushButton_15 = QtWidgets.QPushButton(self.balgi)
-        self.pushButton_15.setGeometry(QtCore.QRect(1350, 210, 31, 61))
-        self.pushButton_15.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.pushButton_15.setStyleSheet("QPushButton{image:url(./image/right_1.png); border:0px;color:}\n"
+        self.bal_left_btn.setText("")
+        self.bal_left_btn.setCheckable(False)
+        self.bal_left_btn.setObjectName("bal_left_btn")
+        self.bal_right_btn = QtWidgets.QPushButton(self.balgi)
+        self.bal_right_btn.setGeometry(QtCore.QRect(1350, 210, 31, 61))
+        self.bal_right_btn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
+        self.bal_right_btn.setStyleSheet("QPushButton{image:url(./image/right_1.png); border:0px;color:}\n"
 "QPushButton:hover{image:url(./image/right_2.png); border:0px;}\n"
 "")
-        self.pushButton_15.setText("")
-        self.pushButton_15.setCheckable(False)
-        self.pushButton_15.setObjectName("pushButton_15")
+        self.bal_right_btn.setText("")
+        self.bal_right_btn.setCheckable(False)
+        self.bal_right_btn.setObjectName("bal_right_btn")
         self.label_29 = QtWidgets.QLabel(self.balgi)
         self.label_29.setGeometry(QtCore.QRect(40, 10, 41, 461))
         self.label_29.setStyleSheet("border : 0px;")
@@ -2458,9 +2463,9 @@ class Ui_MainWindow(object):
         self.label_29.setObjectName("label_29")
         self.gridLayoutWidget.raise_()
         self.horizontalLayoutWidget_2.raise_()
-        self.pushButton_15.raise_()
+        self.bal_right_btn.raise_()
         self.label_29.raise_()
-        self.pushButton_14.raise_()
+        self.bal_left_btn.raise_()
         self.stackedWidget.addWidget(self.balgi)
         self.ondo = QtWidgets.QWidget()
         self.ondo.setObjectName("ondo")
@@ -3722,6 +3727,18 @@ class Ui_MainWindow(object):
         self.kit_2 = QtWidgets.QWidget()
         self.kit_2.setObjectName("kit_2")
         self.stackedWidget.addWidget(self.kit_2)
+        self.set_page = QtWidgets.QWidget()
+        self.set_page.setObjectName("set_page")
+        self.stackedWidget.addWidget(self.set_page)
+        self.credit_page = QtWidgets.QWidget()
+        self.credit_page.setObjectName("credit_page")
+        self.label_3 = QtWidgets.QLabel(self.credit_page)
+        self.label_3.setGeometry(QtCore.QRect(10, 30, 1381, 531))
+        self.label_3.setStyleSheet("border : 0px;\n"
+"image:url(./image/credit_dance.png);")
+        self.label_3.setText("")
+        self.label_3.setObjectName("label_3")
+        self.stackedWidget.addWidget(self.credit_page)
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_2.setGeometry(QtCore.QRect(1460, 0, 311, 71))
         self.pushButton_2.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
@@ -3742,7 +3759,8 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(2)
+        self.stackedWidget.setCurrentIndex(9)
+        self.pushButton_2.clicked.connect(MainWindow.dgsw)
         self.bal_r_val.sliderMoved['int'].connect(self.bal_r_num.setNum)
         self.bal_r_val.valueChanged['int'].connect(self.bal_r_num.setNum)
         self.bal_b_val.valueChanged['int'].connect(self.bal_b_num.setNum)
@@ -3764,6 +3782,10 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "58"))
+        self.chk_light.setText(_translate("MainWindow", "\n"
+"\n"
+"\n"
+"19"))
         self.chk_ph2.setText(_translate("MainWindow", "\n"
 "\n"
 "\n"
@@ -3772,10 +3794,6 @@ class Ui_MainWindow(object):
 "\n"
 "\n"
 "45"))
-        self.chk_light.setText(_translate("MainWindow", "\n"
-"\n"
-"\n"
-"19"))
         self.label_12.setText(_translate("MainWindow", "100%"))
         self.lineEdit_3.setText(_translate("MainWindow", "왼쪽 위 led"))
         self.lineEdit_4.setText(_translate("MainWindow", "L02"))
@@ -3807,41 +3825,41 @@ class Ui_MainWindow(object):
         self.bal_r_1.setText(_translate("MainWindow", "100"))
         self.bal_b_1.setText(_translate("MainWindow", "100"))
         self.bal_w_1.setText(_translate("MainWindow", "100"))
-        self.bal_text_2.setText(_translate("MainWindow", "왼쪽 위 led"))
-        self.bal_label_2.setText(_translate("MainWindow", "L02"))
-        self.bal_r_2.setText(_translate("MainWindow", "100"))
-        self.bal_b_2.setText(_translate("MainWindow", "100"))
-        self.bal_w_2.setText(_translate("MainWindow", "100"))
-        self.bal_text_3.setText(_translate("MainWindow", "왼쪽 위 led"))
-        self.bal_label_3.setText(_translate("MainWindow", "L02"))
-        self.bal_r_3.setText(_translate("MainWindow", "100"))
-        self.bal_b_3.setText(_translate("MainWindow", "100"))
-        self.bal_w_3.setText(_translate("MainWindow", "100"))
-        self.bal_text_4.setText(_translate("MainWindow", "왼쪽 위 led"))
-        self.bal_label_4.setText(_translate("MainWindow", "L02"))
-        self.bal_r_4.setText(_translate("MainWindow", "100"))
-        self.bal_b_4.setText(_translate("MainWindow", "100"))
-        self.bal_w_4.setText(_translate("MainWindow", "100"))
-        self.bal_text_5.setText(_translate("MainWindow", "왼쪽 위 led"))
-        self.bal_label_5.setText(_translate("MainWindow", "L02"))
-        self.bal_r_5.setText(_translate("MainWindow", "100"))
-        self.bal_b_5.setText(_translate("MainWindow", "100"))
-        self.bal_w_5.setText(_translate("MainWindow", "100"))
         self.bal_text_6.setText(_translate("MainWindow", "왼쪽 위 led"))
         self.bal_label_6.setText(_translate("MainWindow", "L02"))
         self.bal_r_6.setText(_translate("MainWindow", "100"))
         self.bal_b_6.setText(_translate("MainWindow", "100"))
         self.bal_w_6.setText(_translate("MainWindow", "100"))
-        self.bal_text_7.setText(_translate("MainWindow", "왼쪽 위 led"))
-        self.bal_label_7.setText(_translate("MainWindow", "L02"))
-        self.bal_r_7.setText(_translate("MainWindow", "100"))
-        self.bal_b_7.setText(_translate("MainWindow", "100"))
-        self.bal_w_7.setText(_translate("MainWindow", "100"))
         self.bal_text_8.setText(_translate("MainWindow", "왼쪽 위 led"))
         self.bal_label_8.setText(_translate("MainWindow", "L02"))
         self.bal_r_8.setText(_translate("MainWindow", "100"))
         self.bal_b_8.setText(_translate("MainWindow", "100"))
         self.bal_w_8.setText(_translate("MainWindow", "100"))
+        self.bal_text_3.setText(_translate("MainWindow", "왼쪽 위 led"))
+        self.bal_label_3.setText(_translate("MainWindow", "L02"))
+        self.bal_r_3.setText(_translate("MainWindow", "100"))
+        self.bal_b_3.setText(_translate("MainWindow", "100"))
+        self.bal_w_3.setText(_translate("MainWindow", "100"))
+        self.bal_text_5.setText(_translate("MainWindow", "왼쪽 위 led"))
+        self.bal_label_5.setText(_translate("MainWindow", "L02"))
+        self.bal_r_5.setText(_translate("MainWindow", "100"))
+        self.bal_b_5.setText(_translate("MainWindow", "100"))
+        self.bal_w_5.setText(_translate("MainWindow", "100"))
+        self.bal_text_2.setText(_translate("MainWindow", "왼쪽 위 led"))
+        self.bal_label_2.setText(_translate("MainWindow", "L02"))
+        self.bal_r_2.setText(_translate("MainWindow", "100"))
+        self.bal_b_2.setText(_translate("MainWindow", "100"))
+        self.bal_w_2.setText(_translate("MainWindow", "100"))
+        self.bal_text_4.setText(_translate("MainWindow", "왼쪽 위 led"))
+        self.bal_label_4.setText(_translate("MainWindow", "L02"))
+        self.bal_r_4.setText(_translate("MainWindow", "100"))
+        self.bal_b_4.setText(_translate("MainWindow", "100"))
+        self.bal_w_4.setText(_translate("MainWindow", "100"))
+        self.bal_text_7.setText(_translate("MainWindow", "왼쪽 위 led"))
+        self.bal_label_7.setText(_translate("MainWindow", "L02"))
+        self.bal_r_7.setText(_translate("MainWindow", "100"))
+        self.bal_b_7.setText(_translate("MainWindow", "100"))
+        self.bal_w_7.setText(_translate("MainWindow", "100"))
         self.bal_r_num.setText(_translate("MainWindow", "0"))
         self.label_10.setText(_translate("MainWindow", "RED"))
         self.bal_b_num.setText(_translate("MainWindow", "0"))
@@ -3890,3 +3908,4 @@ class Ui_MainWindow(object):
         self.label_56.setText(_translate("MainWindow", "100"))
         self.label_57.setText(_translate("MainWindow", "%"))
 
+from pyqtgraph import PlotWidget
