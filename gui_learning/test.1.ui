@@ -610,7 +610,7 @@ QPushButton:checked{image:url(./image/chk_light2.png); border:0px;color:rgb(222,
      <string notr="true">border-left : 2px solid rgb(217,217,217);</string>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>6</number>
     </property>
     <widget class="QWidget" name="grape"/>
     <widget class="QWidget" name="song">
@@ -749,7 +749,7 @@ QPushButton:checked:hover{image:url(./image/on_big_2.png); border:0px;background
         <height>411</height>
        </rect>
       </property>
-      <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0,0" columnstretch="0,0,0,0">
+      <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,0" columnstretch="0,0,0,0">
        <property name="leftMargin">
         <number>45</number>
        </property>

@@ -46,7 +46,7 @@ class Example(QWidget):
         self.anim.setDuration(2000)
         self.anim.setStartValue(QRect(150, 30, 100, 100))
         self.anim.setEndValue(QRect(250, 30, 100, 100))
-        self.anim.setEasingCurve(QEasingCurve(QEasingCurve.InOutQuint))
+        self.anim.setEasingCurve(QEasingCurve(QEasingCurve.InOutQuart))
         
         self.anim.start()
 

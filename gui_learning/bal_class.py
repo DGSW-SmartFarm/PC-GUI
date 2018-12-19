@@ -2,6 +2,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 import serial
 import pymysql
+from time import sleep
 
 class Balgi(QtWidgets.QMainWindow):
 
@@ -65,7 +66,31 @@ class Balgi(QtWidgets.QMainWindow):
         self.ui.bal_left_btn.clicked.connect(self.bal_left_btn_event)
         self.ui.bal_right_btn.clicked.connect(self.bal_right_btn_event)
 
-        #self.bal_data_change([[1,2],[1,2],[1,2]]) #testdata
+        self.curs.execute("select * from bal;")
+        data = self.curs.fetchall()
+        
+        i=0
+        
+        self.pen_value = [0 for i in range(len(data))]
+        self.sql_in = [0 for i in range(len(data))]
+
+        self.curs.execute("select * from pen")
+        data_pen = self.curs.fetchall()
+
+
+        for i in range(len(data)):
+            self.sql_in[i] = data[i][0]
+            
+
+            for d in data_pen:
+    
+                if(data[i][1] == d[1]):
+                    self.pen_value[i] = d[3]
+
+            message = ''.join(['\x02',data[i][1],'P',str(self.pen_value[i]).zfill(3),'R',str(data[i][3]).zfill(3),'B',str(data[i][4]).zfill(3),'W',str(data[i][5]).zfill(3),'\x03'])
+            print(message)
+            self.ser.write(bytes(message.encode()))
+            sleep(0.7)
 
 
     def bal_left_btn_event(self):
@@ -92,7 +117,7 @@ class Balgi(QtWidgets.QMainWindow):
         print(('update bal set r = %s, b = %s, w = %s where no = %d') % (R,B,W,self.sql_in[self.nowchk+self.nowadd]))
         self.conn.commit()
 
-        if self.bal_onoff[self.nowchk].isChecked == True:
+        if self.bal_onoff[self.nowchk].isChecked() == True:
             message = ''.join(['\x02',ID,'P',P,'R',R,'B',B,'W',W,'\x03'])
         else: 
             message = ''.join(['\x02',ID,'P',P,'R','000','B','000','W','000','\x03'])
@@ -263,29 +288,26 @@ class Balgi(QtWidgets.QMainWindow):
                 if(data[i][1] == d[1]):
                     self.pen_value[i] = d[3]
 
-            message = ''.join(['\x02',data[i][1],'P',str(self.pen_value[i]).zfill(3),'R',str(data[i][3]).zfill(3),'B',str(data[i][3]).zfill(4),'W',str(data[i][3]).zfill(5),'\x03'])
-            print(message)
-            self.ser.write(bytes(message.encode()))
-
 
         lt = len(data)
         
-        print(lt)
-        
-        for i in range(min(8,lt-self.nowadd)):
-            self.bal_btn[i].lower()
-            self.bal_wi[i].setVisible(True)
-            self.bal_btn[i].setStyleSheet('image : url(./);\nbackground-color : rgba(0,0,0,0);')
-            self.bal_btn[i].setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor)) 
-            self.bal_label[i].setText(data[i+self.nowadd][1])
-            self.bal_text[i].setText(data[i+self.nowadd][2])
-            self.bal_r[i].setNum(data[i+self.nowadd][3])
-            self.bal_b[i].setNum(data[i+self.nowadd][4])
-            self.bal_w[i].setNum(data[i+self.nowadd][5])
-            self.bal_onoff[i].setChecked(data[i+self.nowadd][6])
-        
-            self.bal_wi[i].setStyleSheet(self.originalstyle)
+        print('lt=',lt)
+        if(lt != 0):
+            for i in range(min(8,lt-self.nowadd)):
+                self.bal_btn[i].lower()
+                self.bal_wi[i].setVisible(True)
+                self.bal_btn[i].setStyleSheet('image : url(./);\nbackground-color : rgba(0,0,0,0);')
+                self.bal_btn[i].setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor)) 
+                self.bal_label[i].setText(data[i+self.nowadd][1])
+                self.bal_text[i].setText(data[i+self.nowadd][2])
+                self.bal_r[i].setNum(data[i+self.nowadd][3])
+                self.bal_b[i].setNum(data[i+self.nowadd][4])
+                self.bal_w[i].setNum(data[i+self.nowadd][5])
+                self.bal_onoff[i].setChecked(data[i+self.nowadd][6])
             
+                self.bal_wi[i].setStyleSheet(self.originalstyle)
+        else:
+            i = -1    
 
         print(self.pen_value)
 
