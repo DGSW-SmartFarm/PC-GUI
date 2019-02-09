@@ -229,7 +229,6 @@ bal.bal_data_change()
 pen = Pen(ui,ser,conn2)
 pen.pen_data_change()
 
-time.sleep(9)
 
 data_update_thread = threading.Thread(target=data_update)  #쓰레드 생성
 data_update_thread.daemon = True
@@ -238,8 +237,8 @@ data_update_thread.start()
 
 graph_init(ui.graphicsView)
 
-x = [deque(maxlen=9) for i in range(4)]
-y = [deque(maxlen=9) for i in range(4)]
+x = [deque(maxlen=10) for i in range(4)]
+y = [deque(maxlen=10) for i in range(4)]
 
 
 ui.stackedWidget.setCurrentIndex(9)
